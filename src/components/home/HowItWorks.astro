@@ -1,0 +1,48 @@
+---
+import Section from '../ui/Section.astro';
+
+const steps = [
+  {
+    number: '1',
+    title: 'DIAGNOSE',
+    description: 'I audit your current GTM — funnel, process, messaging, team, tools. You get a clear diagnosis of what\'s working, what\'s creating drag, and what to fix first.'
+  },
+  {
+    number: '2',
+    title: 'BUILD',
+    description: 'I develop your complete GTM playbook and deploy your custom AI swarm inside Claude. Six specialized agents trained on your exact strategy.'
+  },
+  {
+    number: '3',
+    title: 'TRAIN',
+    description: 'I train your team to use the swarm effectively. Best practices, common workflows, and when to use which agent.'
+  },
+  {
+    number: '4',
+    title: 'SCALE',
+    description: 'You keep access. I provide quarterly updates and async support. The system runs without me.'
+  }
+];
+---
+
+<Section id="how-it-works" background="white">
+  <div class="text-center mb-12">
+    <h2 class="mb-6">How It Works</h2>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+    {steps.map((step) => (
+      <div class="relative">
+        <div class="flex items-start gap-4">
+          <div class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold">
+            {step.number}
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-3">STEP {step.number}: {step.title}</h3>
+            <p class="text-gray-700">{step.description}</p>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</Section>

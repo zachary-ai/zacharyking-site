@@ -1,10 +1,8 @@
-# Astro Starter Kit: Minimal
+# zacharyking.com.au
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Personal website for Zachary King - AI-Powered GTM Systems for Startups.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Built with Astro + Tailwind CSS, deployed on Netlify.
 
 ## 🚀 Project Structure
 
@@ -38,6 +36,28 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## 🚀 Deployment
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+This site is deployed to Netlify with automatic builds from the `main` branch.
+
+### Deploy Process
+1. Push changes to GitHub: `git push origin main`
+2. Netlify automatically builds and deploys
+3. Site live at https://zacharyking.com.au
+
+### Configuration
+- Build command: `npm run build`
+- Publish directory: `dist`
+- See `netlify.toml` for full configuration
+
+## 📝 Content Updates
+
+**To update Calendly URL:**
+Edit `src/pages/contact.astro` and update the CalendlyEmbed component URL.
+
+**To add images:**
+Place images in `public/images/` directory and reference as `/images/filename.jpg`
+
+## 👀 Want to learn more about Astro?
+
+Check [Astro documentation](https://docs.astro.build)

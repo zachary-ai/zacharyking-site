@@ -1,0 +1,32 @@
+---
+export interface Props {
+  url: string;
+  minHeight?: string;
+}
+
+const { url, minHeight = '700px' } = Astro.props;
+---
+
+<!-- Calendly inline widget begin -->
+<div
+  class="calendly-inline-widget"
+  data-url={url}
+  style={`min-width:320px;height:${minHeight};`}
+>
+</div>
+
+<script is:inline>
+  // Load Calendly widget script
+  (function() {
+    var script = document.createElement('script');
+    script.src = 'https://assets.calendly.com/assets/external/widget.js';
+    script.async = true;
+    document.body.appendChild(script);
+  })();
+</script>
+
+<link
+  href="https://assets.calendly.com/assets/external/widget.css"
+  rel="stylesheet"
+/>
+<!-- Calendly inline widget end -->

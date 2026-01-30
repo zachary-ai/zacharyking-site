@@ -1,0 +1,79 @@
+---
+import Section from '../ui/Section.astro';
+import ServiceCard from '../ui/ServiceCard.astro';
+
+const services = [
+  {
+    title: 'GTM Diagnostic',
+    price: '$5-7K',
+    description: '1-week deep dive. Audit + roadmap + AI opportunity map.',
+    features: [
+      'Complete GTM audit',
+      'Strategic roadmap',
+      'AI opportunity assessment',
+      'Actionable recommendations'
+    ],
+    featured: false
+  },
+  {
+    title: 'GTM Swarm Sprint',
+    price: '$25-35K',
+    description: '60-90 days. Full playbook + AI swarm deployed + team training.',
+    features: [
+      'Complete GTM strategy',
+      'Full sales playbook (15-25K words)',
+      '6 specialized AI agents deployed',
+      'Team training and enablement',
+      '90 days of implementation support'
+    ],
+    featured: true
+  },
+  {
+    title: 'Fractional GTM',
+    price: '$8-10K/month',
+    description: '3-6 months embedded leadership + playbook + swarm deployment.',
+    features: [
+      'Embedded GTM leadership',
+      'Strategic planning and execution',
+      'Full playbook development',
+      'AI swarm deployment',
+      'Ongoing team coaching',
+      'Flexible engagement (3-6 months)'
+    ],
+    featured: false
+  },
+  {
+    title: 'Swarm Subscription',
+    price: '$1-1.5K/month',
+    description: 'Ongoing access + quarterly updates + async support.',
+    features: [
+      'Continued swarm access',
+      'Quarterly playbook updates',
+      'Async support via Slack/email',
+      'New agent features as released'
+    ],
+    featured: false
+  }
+];
+---
+
+<Section id="services" background="gray">
+  <div class="text-center mb-12">
+    <h2 class="mb-6">Services</h2>
+    <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+      Choose the engagement model that fits your stage and needs.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+    {services.map((service) => (
+      <ServiceCard
+        title={service.title}
+        price={service.price}
+        description={service.description}
+        features={service.features}
+        featured={service.featured}
+      />
+    ))}
+  </div>
+</Section>

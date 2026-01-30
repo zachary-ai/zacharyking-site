@@ -1,0 +1,100 @@
+---
+const navLinks = [
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '/about' },
+  { name: 'Services', href: '/services' },
+  { name: 'How It Works', href: '/how-it-works' },
+  { name: 'Contact', href: '/contact' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
+  <nav class="section-container py-4">
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <a href="/" class="text-2xl font-bold text-gray-900">
+        Zachary King
+      </a>
+
+      <!-- Desktop Navigation -->
+      <ul class="hidden md:flex items-center space-x-8">
+        {navLinks.map((link) => (
+          <li>
+            <a
+              href={link.href}
+              class={`text-gray-700 hover:text-blue-600 transition-colors duration-200 ${
+                currentPath === link.href ? 'text-blue-600 font-semibold' : ''
+              }`}
+            >
+              {link.name}
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <!-- CTA Button -->
+      <a href="/contact" class="hidden md:inline-block btn-primary">
+        Book a Call
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button
+        id="mobile-menu-button"
+        class="md:hidden p-2 text-gray-700 hover:text-blue-600"
+        aria-label="Toggle menu"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden pt-4 pb-2">
+      <ul class="space-y-2">
+        {navLinks.map((link) => (
+          <li>
+            <a
+              href={link.href}
+              class={`block py-2 text-gray-700 hover:text-blue-600 transition-colors duration-200 ${
+                currentPath === link.href ? 'text-blue-600 font-semibold' : ''
+              }`}
+            >
+              {link.name}
+            </a>
+          </li>
+        ))}
+        <li class="pt-2">
+          <a href="/contact" class="block text-center btn-primary">
+            Book a Call
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- Spacer for fixed header -->
+<div class="h-20"></div>
+
+<script>
+  // Mobile menu toggle
+  const button = document.getElementById('mobile-menu-button');
+  const menu = document.getElementById('mobile-menu');
+
+  button?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>

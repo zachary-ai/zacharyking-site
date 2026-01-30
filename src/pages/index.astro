@@ -1,17 +1,25 @@
 ---
-
+import Layout from '../components/layout/Layout.astro';
+import Hero from '../components/home/Hero.astro';
+import Problem from '../components/home/Problem.astro';
+import Solution from '../components/home/Solution.astro';
+import SwarmOverview from '../components/home/SwarmOverview.astro';
+import HowItWorks from '../components/home/HowItWorks.astro';
+import Services from '../components/home/Services.astro';
+import WhoFor from '../components/home/WhoFor.astro';
+import CTA from '../components/home/CTA.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout
+  title="Zachary King - AI-Powered GTM Systems for Startups"
+  description="I build AI-powered GTM systems for startups. Strategy. Playbook. AI Swarm. Everything your team needs to sell — developed, documented, and deployed on AI."
+>
+  <Hero />
+  <Problem />
+  <Solution />
+  <SwarmOverview />
+  <HowItWorks />
+  <Services />
+  <WhoFor />
+  <CTA />
+</Layout>

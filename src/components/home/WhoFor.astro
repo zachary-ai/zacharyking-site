@@ -1,0 +1,56 @@
+---
+import Section from '../ui/Section.astro';
+
+const idealFor = [
+  'B2B SaaS / tech startups, pre-seed to Series B',
+  '$1-10M revenue range (or strong traction)',
+  'Founder-led sales → ready to scale',
+  'No VP Sales yet, or need interim leadership',
+  'Open to AI-native approaches',
+  'Willing to run Claude Team (~$25/user/month)'
+];
+
+const notFor = [
+  'Enterprise companies with rigid IT requirements',
+  'Teams who want a "traditional" sales consultant',
+  'Anyone who thinks AI is a gimmick'
+];
+---
+
+<Section id="who-for" background="white">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-center mb-12">Who This Is For</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Ideal For -->
+      <div class="bg-green-50 border-2 border-green-200 rounded-lg p-8">
+        <h3 class="text-2xl font-bold mb-6 text-green-900">✓ Ideal For</h3>
+        <ul class="space-y-3">
+          {idealFor.map((item) => (
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-gray-700">{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Not For -->
+      <div class="bg-red-50 border-2 border-red-200 rounded-lg p-8">
+        <h3 class="text-2xl font-bold mb-6 text-red-900">✗ Not For</h3>
+        <ul class="space-y-3">
+          {notFor.map((item) => (
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-red-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-gray-700">{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</Section>
