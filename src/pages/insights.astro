@@ -25,9 +25,9 @@ const sortedPosts = allPosts.sort((a, b) => {
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         {sortedPosts.map((post) => (
           <a
-            href={`/insights/${post.data.slug || post.id}`}
+            href={`/insights/${post.data.slug || post.id.replace('.md', '')}`}
             class="card group block"
-            onclick={`gtag('event', 'insights_article_click', { 'article_title': '${post.data.title.replace(/'/g, "\\'")}', 'article_slug': '${post.data.slug || post.id}' }); return true;`}
+            onclick={`gtag('event', 'insights_article_click', { 'article_title': '${post.data.title.replace(/'/g, "\\'")}', 'article_slug': '${post.data.slug || post.id.replace('.md', '')}' }); return true;`}
           >
             <div class="mb-4">
               <time class="text-sm" style="color: var(--color-accent-blue); font-family: 'DM Sans', sans-serif; letter-spacing: 0.05em; font-weight: 600;">
