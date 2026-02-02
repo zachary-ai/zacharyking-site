@@ -27,6 +27,7 @@ const sortedPosts = allPosts.sort((a, b) => {
           <a
             href={`/insights/${post.data.slug || post.id}`}
             class="card group block"
+            onclick={`gtag('event', 'insights_article_click', { 'article_title': '${post.data.title.replace(/'/g, "\\'")}', 'article_slug': '${post.data.slug || post.id}' }); return true;`}
           >
             <div class="mb-4">
               <time class="text-sm" style="color: var(--color-accent-blue); font-family: 'DM Sans', sans-serif; letter-spacing: 0.05em; font-weight: 600;">
@@ -63,6 +64,7 @@ const sortedPosts = allPosts.sort((a, b) => {
         target="_blank"
         rel="noopener noreferrer"
         class="btn-primary inline-flex items-center gap-2"
+        onclick="gtag('event', 'newsletter_signup_click', { 'location': 'insights_page' }); return true;"
       >
         Subscribe to Newsletter
         <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

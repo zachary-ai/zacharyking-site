@@ -53,4 +53,32 @@ const { title, description, image = '/images/tif-presenting.jpg' } = Astro.props
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-KQNNCFL685');
+
+  // Scroll depth tracking
+  (function() {
+    var scrollDepths = [25, 50, 75, 100];
+    var trackedDepths = {};
+
+    function trackScrollDepth() {
+      var scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+      var scrolled = window.scrollY;
+      var scrollPercent = Math.round((scrolled / scrollHeight) * 100);
+
+      scrollDepths.forEach(function(depth) {
+        if (scrollPercent >= depth && !trackedDepths[depth]) {
+          trackedDepths[depth] = true;
+          gtag('event', 'scroll_depth', {
+            'percent_scrolled': depth,
+            'page_location': window.location.pathname
+          });
+        }
+      });
+    }
+
+    var scrollTimeout;
+    window.addEventListener('scroll', function() {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(trackScrollDepth, 100);
+    });
+  })();
 </script>

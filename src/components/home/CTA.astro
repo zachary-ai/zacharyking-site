@@ -13,7 +13,13 @@ import Button from '../ui/Button.astro';
       <p class="text-2xl mb-12 leading-relaxed" style="color: var(--color-text-secondary);">
         Book a 30-minute call. No pitch deck. Just a conversation about where you're at and whether this is the right fit.
       </p>
-      <Button href="https://savvycal.com/Zachary-King/b18fb593" variant="primary" size="lg">
+      <Button
+        href="https://savvycal.com/Zachary-King/b18fb593"
+        variant="primary"
+        size="lg"
+        gaEvent="book_call_click"
+        gaParams={{ location: 'cta_section' }}
+      >
         Book a Call
       </Button>
     </div>

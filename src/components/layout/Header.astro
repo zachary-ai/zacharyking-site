@@ -41,7 +41,11 @@ const currentPath = Astro.url.pathname;
       </ul>
 
       <!-- CTA Button -->
-      <a href="https://savvycal.com/Zachary-King/b18fb593" class="hidden md:inline-block btn-primary text-base">
+      <a
+        href="https://savvycal.com/Zachary-King/b18fb593"
+        class="hidden md:inline-block btn-primary text-base"
+        onclick="gtag('event', 'book_call_click', { 'location': 'header' }); return true;"
+      >
         Get Started
       </a>
 
@@ -83,7 +87,11 @@ const currentPath = Astro.url.pathname;
           </li>
         ))}
         <li class="pt-4">
-          <a href="https://savvycal.com/Zachary-King/b18fb593" class="block text-center btn-primary text-base">
+          <a
+            href="https://savvycal.com/Zachary-King/b18fb593"
+            class="block text-center btn-primary text-base"
+            onclick="gtag('event', 'book_call_click', { 'location': 'mobile_menu' }); return true;"
+          >
             Get Started
           </a>
         </li>

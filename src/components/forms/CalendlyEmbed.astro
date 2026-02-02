@@ -21,6 +21,15 @@ const { url, minHeight = '700px' } = Astro.props;
     var script = document.createElement('script');
     script.src = 'https://assets.calendly.com/assets/external/widget.js';
     script.async = true;
+    script.onload = function() {
+      // Track Calendly widget loaded
+      if (window.gtag) {
+        gtag('event', 'calendly_opened', {
+          'event_category': 'engagement',
+          'event_label': 'contact_page'
+        });
+      }
+    };
     document.body.appendChild(script);
   })();
 </script>

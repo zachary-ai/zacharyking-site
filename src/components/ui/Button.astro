@@ -4,13 +4,17 @@ export interface Props {
   variant?: 'primary' | 'secondary' | 'outline';
   size?: 'sm' | 'md' | 'lg';
   class?: string;
+  gaEvent?: string;
+  gaParams?: Record<string, any>;
 }
 
 const {
   href,
   variant = 'primary',
   size = 'md',
-  class: className = ''
+  class: className = '',
+  gaEvent,
+  gaParams = {}
 } = Astro.props;
 
 const baseStyles = 'inline-block font-semibold rounded-xl transition-all duration-300 text-center';
@@ -30,8 +34,18 @@ const sizeStyles = {
 const classes = `${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`;
 
 const Element = href ? 'a' : 'button';
+
+// Generate onclick handler for GA4 tracking
+const onclickHandler = gaEvent
+  ? `gtag('event', '${gaEvent}', ${JSON.stringify(gaParams)}); return true;`
+  : undefined;
 ---
 
-<Element href={href} class={classes} style="font-family: 'DM Sans', sans-serif;">
+<Element
+  href={href}
+  class={classes}
+  style="font-family: 'DM Sans', sans-serif;"
+  onclick={onclickHandler}
+>
   <slot />
 </Element>
