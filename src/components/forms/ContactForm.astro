@@ -6,7 +6,7 @@
   method="POST"
   data-netlify="true"
   netlify-honeypot="bot-field"
-  class="space-y-4"
+  class="space-y-6"
 >
   {/* Hidden fields for Netlify */}
   <input type="hidden" name="form-name" value="contact" />
@@ -17,70 +17,85 @@
   </p>
 
   <div>
-    <label for="name" class="block text-gray-700 font-semibold mb-2">
+    <label for="name" class="block font-semibold mb-2" style="color: var(--color-text-primary);">
       Name *
     </label>
     <input
       type="text"
       id="name"
       name="name"
-      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+      class="w-full px-4 py-3 rounded-lg transition-all duration-300"
+      style="background: var(--color-dark-bg); border: 1px solid var(--color-border); color: var(--color-text-primary);"
+      onfocus="this.style.borderColor='var(--color-accent-blue)'; this.style.boxShadow='0 0 0 3px rgba(14, 165, 233, 0.1)';"
+      onblur="this.style.borderColor='var(--color-border)'; this.style.boxShadow='none';"
       required
     />
   </div>
 
   <div>
-    <label for="email" class="block text-gray-700 font-semibold mb-2">
+    <label for="email" class="block font-semibold mb-2" style="color: var(--color-text-primary);">
       Email *
     </label>
     <input
       type="email"
       id="email"
       name="email"
-      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+      class="w-full px-4 py-3 rounded-lg transition-all duration-300"
+      style="background: var(--color-dark-bg); border: 1px solid var(--color-border); color: var(--color-text-primary);"
+      onfocus="this.style.borderColor='var(--color-accent-blue)'; this.style.boxShadow='0 0 0 3px rgba(14, 165, 233, 0.1)';"
+      onblur="this.style.borderColor='var(--color-border)'; this.style.boxShadow='none';"
       required
     />
   </div>
 
   <div>
-    <label for="company" class="block text-gray-700 font-semibold mb-2">
+    <label for="company" class="block font-semibold mb-2" style="color: var(--color-text-primary);">
       Company
     </label>
     <input
       type="text"
       id="company"
       name="company"
-      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+      class="w-full px-4 py-3 rounded-lg transition-all duration-300"
+      style="background: var(--color-dark-bg); border: 1px solid var(--color-border); color: var(--color-text-primary);"
+      onfocus="this.style.borderColor='var(--color-accent-blue)'; this.style.boxShadow='0 0 0 3px rgba(14, 165, 233, 0.1)';"
+      onblur="this.style.borderColor='var(--color-border)'; this.style.boxShadow='none';"
     />
   </div>
 
   <div>
-    <label for="stage" class="block text-gray-700 font-semibold mb-2">
+    <label for="stage" class="block font-semibold mb-2" style="color: var(--color-text-primary);">
       Stage
     </label>
     <select
       id="stage"
       name="stage"
-      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+      class="w-full px-4 py-3 rounded-lg transition-all duration-300"
+      style="background: var(--color-dark-bg); border: 1px solid var(--color-border); color: var(--color-text-primary);"
+      onfocus="this.style.borderColor='var(--color-accent-blue)'; this.style.boxShadow='0 0 0 3px rgba(14, 165, 233, 0.1)';"
+      onblur="this.style.borderColor='var(--color-border)'; this.style.boxShadow='none';"
     >
-      <option value="">Select stage...</option>
-      <option value="pre-seed">Pre-seed</option>
-      <option value="seed">Seed</option>
-      <option value="series-a">Series A</option>
-      <option value="series-b">Series B</option>
-      <option value="other">Other</option>
+      <option value="" style="background: var(--color-dark-bg); color: var(--color-text-muted);">Select stage...</option>
+      <option value="pre-seed" style="background: var(--color-dark-bg); color: var(--color-text-primary);">Pre-seed</option>
+      <option value="seed" style="background: var(--color-dark-bg); color: var(--color-text-primary);">Seed</option>
+      <option value="series-a" style="background: var(--color-dark-bg); color: var(--color-text-primary);">Series A</option>
+      <option value="series-b" style="background: var(--color-dark-bg); color: var(--color-text-primary);">Series B</option>
+      <option value="other" style="background: var(--color-dark-bg); color: var(--color-text-primary);">Other</option>
     </select>
   </div>
 
   <div>
-    <label for="message" class="block text-gray-700 font-semibold mb-2">
+    <label for="message" class="block font-semibold mb-2" style="color: var(--color-text-primary);">
       Message *
     </label>
     <textarea
       id="message"
       name="message"
       rows="4"
-      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+      class="w-full px-4 py-3 rounded-lg transition-all duration-300"
+      style="background: var(--color-dark-bg); border: 1px solid var(--color-border); color: var(--color-text-primary);"
+      onfocus="this.style.borderColor='var(--color-accent-blue)'; this.style.boxShadow='0 0 0 3px rgba(14, 165, 233, 0.1)';"
+      onblur="this.style.borderColor='var(--color-border)'; this.style.boxShadow='none';"
       required
     ></textarea>
   </div>

@@ -18,30 +18,44 @@ const footerLinks = [
   { name: 'About', href: '/about' },
   { name: 'Services', href: '/services' },
   { name: 'How It Works', href: '/how-it-works' },
+  { name: 'Insights', href: '/insights' },
   { name: 'Contact', href: '/contact' },
+];
+
+const moreFromZac = [
+  { name: 'The Fractional Exec', href: 'https://thefractionalexec.com.au', description: 'Community for fractional executives' },
+  { name: 'Fractional Newsletter', href: 'https://thefractionalexec.com.au/newsletter', description: 'Weekly GTM insights' },
+  { name: 'Fractionalism Podcast', href: 'https://thefractionalexec.com.au/podcast', description: 'Conversations with operators' },
 ];
 ---
 
-<footer class="bg-gray-900 text-white">
-  <div class="section-container section-padding">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<footer style="background: var(--color-dark-bg); border-top: 1px solid var(--color-border);">
+  <div class="section-container py-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
       <!-- Brand -->
       <div>
-        <h3 class="text-xl font-bold mb-4">Zachary King</h3>
-        <p class="text-gray-400">
-          Building AI-powered GTM systems for startups.
+        <h3 class="text-2xl font-bold mb-4" style="font-family: 'DM Sans', sans-serif; color: var(--color-text-primary);">
+          Zachary King
+        </h3>
+        <p class="text-lg" style="color: var(--color-text-muted);">
+          Fractional GTM leader building systems that stay.
         </p>
       </div>
 
       <!-- Links -->
       <div>
-        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-        <ul class="space-y-2">
+        <h4 class="text-lg font-semibold mb-6" style="font-family: 'DM Sans', sans-serif; color: var(--color-text-primary);">
+          Quick Links
+        </h4>
+        <ul class="space-y-3">
           {footerLinks.map((link) => (
             <li>
               <a
                 href={link.href}
-                class="text-gray-400 hover:text-white transition-colors duration-200"
+                class="transition-colors duration-300"
+                style="color: var(--color-text-muted);"
+                onmouseover="this.style.color='var(--color-accent-blue)'"
+                onmouseout="this.style.color='var(--color-text-muted)'"
               >
                 {link.name}
               </a>
@@ -50,19 +64,49 @@ const footerLinks = [
         </ul>
       </div>
 
+      <!-- More from Zac -->
+      <div>
+        <h4 class="text-lg font-semibold mb-6" style="font-family: 'DM Sans', sans-serif; color: var(--color-text-primary);">
+          More from Zac
+        </h4>
+        <ul class="space-y-3">
+          {moreFromZac.map((link) => (
+            <li>
+              <a
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="transition-colors duration-300 block"
+                style="color: var(--color-text-muted);"
+                onmouseover="this.style.color='var(--color-accent-blue)'"
+                onmouseout="this.style.color='var(--color-text-muted)'"
+              >
+                <div class="font-medium">{link.name}</div>
+                <div class="text-sm opacity-75">{link.description}</div>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
       <!-- Social -->
       <div>
-        <h4 class="text-lg font-semibold mb-4">Connect</h4>
+        <h4 class="text-lg font-semibold mb-6" style="font-family: 'DM Sans', sans-serif; color: var(--color-text-primary);">
+          Connect
+        </h4>
         <div class="flex space-x-4">
           {socialLinks.map((social) => (
             <a
               href={social.href}
               target="_blank"
               rel="noopener noreferrer"
-              class="text-gray-400 hover:text-white transition-colors duration-200"
+              class="w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-300"
+              style="background: var(--color-dark-elevated); border: 1px solid var(--color-border);"
               aria-label={social.name}
+              onmouseover="this.style.background='var(--color-accent-blue)'; this.style.borderColor='var(--color-accent-blue)';"
+              onmouseout="this.style.background='var(--color-dark-elevated)'; this.style.borderColor='var(--color-border)';"
             >
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" style="color: var(--color-text-secondary);">
                 <path d={social.icon} />
               </svg>
             </a>
@@ -72,8 +116,10 @@ const footerLinks = [
     </div>
 
     <!-- Copyright -->
-    <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-      <p>© {currentYear} Zachary King. All rights reserved.</p>
+    <div class="pt-8 text-center" style="border-top: 1px solid var(--color-border);">
+      <p style="color: var(--color-text-muted);">
+        © {currentYear} Zachary King. All rights reserved.
+      </p>
     </div>
   </div>
 </footer>

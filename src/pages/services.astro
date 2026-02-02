@@ -6,55 +6,57 @@ import ServiceCard from '../components/ui/ServiceCard.astro';
 const services = [
   {
     title: 'GTM Diagnostic',
-    price: '$5-7K',
-    description: '1-week deep dive. Audit + roadmap + AI opportunity map.',
+    price: '$4.5K',
+    description: 'Get a diagnosis of what\'s creating drag, a prioritized 90-day roadmap, and your first outbound campaign ready to launch—in one week.',
     features: [
-      'Complete GTM audit',
-      'Strategic roadmap',
-      'AI opportunity assessment',
-      'Actionable recommendations',
-      'Priority framework for next 90 days'
+      'Know exactly what\'s broken and what to fix first',
+      'ICP validation with existing client data',
+      'Pain point mapping from customer interviews',
+      'Outbound campaign seeded (300+ prospects)',
+      'Messaging framework with proof points',
+      'Prioritized 90-day roadmap with immediate actions'
     ],
     featured: false
   },
   {
     title: 'GTM Swarm Sprint',
-    price: '$25-35K',
-    description: '60-90 days. Full playbook + AI swarm deployed + team training.',
+    price: '$30K',
+    description: 'Get a complete sales playbook, outbound engine with live campaigns, and AI-powered automation that saves 8-12 hours per client—deployed and running in 90 days.',
     features: [
-      'Complete GTM strategy development',
-      'Full sales playbook (15-25K words)',
-      '6 specialized AI agents deployed',
-      'Team training and enablement',
-      '90 days of implementation support',
-      'Swarm access continues after engagement'
+      'Complete sales playbook (documented, not PDF)',
+      'Outbound engine with live campaigns (600+ prospects contacted)',
+      'AI-powered automation in YOUR tools (saves 8-12 hrs/client)',
+      'Weekly sales rhythm established and documented',
+      'Customer interview validation (3-5 conversations)',
+      'Infrastructure stays with you after I leave'
     ],
     featured: true
   },
   {
     title: 'Fractional GTM',
-    price: '$8-10K/month',
-    description: '3-6 months embedded leadership + playbook + swarm deployment.',
+    price: '$9K/month',
+    description: 'I embed in your tools (Apollo, Pipedrive, CRM) and build AI-powered workflows that run your outbound, automate research, and coach your team—while closing active deals alongside you.',
     features: [
-      'Embedded GTM leadership',
-      'Strategic planning and execution',
-      'Full playbook development',
-      'AI swarm deployment',
-      'Ongoing team coaching',
-      'Deal support and closing',
-      'Flexible engagement (3-6 months)'
+      'Embedded GTM leadership in YOUR systems',
+      'AI-powered workflows built on your platforms',
+      'Run active deals and coach your team',
+      'Weekly sales meetings + async support',
+      'Data analysis and ICP profiling',
+      'Custom automation skills for your workflow',
+      'Flexible engagement, cancel anytime'
     ],
     featured: false
   },
   {
     title: 'Swarm Subscription',
-    price: '$1-1.5K/month',
-    description: 'Ongoing access + quarterly updates + async support.',
+    price: '$1.5K/month',
+    description: 'Keep your agents online with quarterly updates, async support when questions surface, and continuous access to new automation skills—no lock-in.',
     features: [
-      'Continued swarm access for all team members',
-      'Quarterly playbook updates',
-      'Async support via Slack/email',
-      'New agent features as released',
+      'Agents stay online and updated',
+      'Quarterly updates with new features',
+      'Async support when questions come up',
+      'Continuous access to new automation skills',
+      'No lock-in, cancel anytime',
       'Perfect for post-sprint support'
     ],
     featured: false
@@ -63,14 +65,88 @@ const services = [
 ---
 
 <Layout
-  title="Services - Zachary King"
-  description="GTM Diagnostic, GTM Swarm Sprint, Fractional GTM Leadership, and Swarm Subscription. Choose the engagement model that fits your stage and needs."
+  title="Services - GTM Swarm | AI-Powered Sales Systems"
+  description="GTM Diagnostic ($4.5K), Swarm Sprint ($30K), Fractional GTM ($9K/mo). AI-powered sales infrastructure deployed in 90 days. Systems stay after I leave."
 >
-  <Section id="services-hero" background="white">
+  <!-- Schema.org structured data for services -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "GTM Infrastructure and Fractional GTM Leadership",
+    "provider": {
+      "@type": "ProfessionalService",
+      "name": "GTM Swarm - Zachary King",
+      "url": "https://zacharyking.com.au"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Australia"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "GTM Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "GTM Diagnostic",
+            "description": "1-week GTM audit with prioritized 90-day roadmap and first outbound campaign"
+          },
+          "price": "4500",
+          "priceCurrency": "AUD"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "GTM Swarm Sprint",
+            "description": "Complete sales playbook and AI infrastructure deployment in 90 days"
+          },
+          "price": "30000",
+          "priceCurrency": "AUD"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Fractional GTM",
+            "description": "Embedded GTM leadership with AI-powered workflows"
+          },
+          "price": "9000",
+          "priceCurrency": "AUD",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "9000",
+            "priceCurrency": "AUD",
+            "unitText": "MONTH"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Swarm Subscription",
+            "description": "Ongoing updates and support for deployed AI agents"
+          },
+          "price": "1500",
+          "priceCurrency": "AUD",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "1500",
+            "priceCurrency": "AUD",
+            "unitText": "MONTH"
+          }
+        }
+      ]
+    }
+  })} />
+
+  <Section id="services-hero" background="dark">
     <div class="text-center max-w-4xl mx-auto mb-16">
-      <h1 class="mb-6">Services</h1>
-      <p class="text-xl text-gray-700">
-        Choose the engagement model that fits your stage and needs. All services include AI swarm deployment — the system that keeps working after I leave.
+      <h1 class="mb-6" style="color: var(--color-text-primary);">Services</h1>
+      <p class="text-xl" style="color: var(--color-text-secondary);">
+        Choose the engagement model that fits your stage and needs. All services include AI infrastructure deployment - systems that keep working after I leave.
       </p>
     </div>
 
@@ -87,13 +163,13 @@ const services = [
     </div>
   </Section>
 
-  <Section id="services-cta" background="gray">
+  <Section id="services-cta" background="elevated">
     <div class="text-center max-w-3xl mx-auto">
-      <h2 class="mb-6">Not sure which service is right for you?</h2>
-      <p class="text-xl text-gray-700 mb-8">
+      <h2 class="mb-6" style="color: var(--color-text-primary);">Not sure which service is right for you?</h2>
+      <p class="text-xl mb-8" style="color: var(--color-text-secondary);">
         Book a 30-minute call. We'll talk through where you're at, what you need, and whether GTM Swarm is the right fit.
       </p>
-      <a href="/contact" class="btn-primary inline-block">
+      <a href="https://savvycal.com/Zachary-King/b18fb593" class="btn-primary inline-block">
         Book a Call
       </a>
     </div>

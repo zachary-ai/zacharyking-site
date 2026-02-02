@@ -6,7 +6,7 @@ export interface Props {
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const { title, description, image = '/og-image.jpg' } = Astro.props;
+const { title, description, image = '/images/tif-presenting.jpg' } = Astro.props;
 ---
 
 <!-- Global Metadata -->
@@ -22,6 +22,8 @@ const { title, description, image = '/og-image.jpg' } = Astro.props;
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
+<meta name="author" content="Zachary King" />
+<meta name="keywords" content="AI-powered GTM, fractional GTM, sales infrastructure, B2B SaaS, startup sales, AI sales automation, GTM systems, revenue systems" />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
@@ -29,6 +31,8 @@ const { title, description, image = '/og-image.jpg' } = Astro.props;
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={new URL(image, Astro.url)} />
+<meta property="og:site_name" content="GTM Swarm - Zachary King" />
+<meta property="og:locale" content="en_AU" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />

@@ -5,12 +5,12 @@ const steps = [
   {
     number: '1',
     title: 'DIAGNOSE',
-    description: 'I audit your current GTM — funnel, process, messaging, team, tools. You get a clear diagnosis of what\'s working, what\'s creating drag, and what to fix first.'
+    description: 'I audit your current GTM - funnel, process, messaging, team, tools. You get a clear diagnosis of what\'s working, what\'s creating drag, and what to fix first.'
   },
   {
     number: '2',
     title: 'BUILD',
-    description: 'I develop your complete GTM playbook and deploy your custom AI swarm inside Claude. Six specialized agents trained on your exact strategy.'
+    description: 'I develop your complete GTM playbook and deploy your custom AI swarm on your AI platform. Six specialized agents trained on your exact strategy.'
   },
   {
     number: '3',
@@ -25,24 +25,54 @@ const steps = [
 ];
 ---
 
-<Section id="how-it-works" background="white">
-  <div class="text-center mb-12">
-    <h2 class="mb-6">How It Works</h2>
+<Section id="how-it-works" background="dark">
+  <div class="text-center mb-16">
+    <h2 class="mb-8">How It Works</h2>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-    {steps.map((step) => (
-      <div class="relative">
-        <div class="flex items-start gap-4">
-          <div class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+    {steps.map((step, index) => (
+      <div class="card relative overflow-hidden group" style={`animation-delay: ${index * 0.1}s`}>
+        <!-- Number badge -->
+        <div class="absolute -right-4 -top-4 w-24 h-24 rounded-full flex items-center justify-center transition-all duration-300" style="background: var(--color-dark-elevated); opacity: 0.5;">
+          <span class="text-6xl font-bold" style="color: var(--color-accent-blue); opacity: 0.3; font-family: 'DM Sans', sans-serif;">
             {step.number}
+          </span>
+        </div>
+
+        <div class="relative z-10">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="flex-shrink-0 w-14 h-14 rounded-xl flex items-center justify-center transition-all duration-300" style="background: linear-gradient(135deg, var(--color-accent-blue) 0%, var(--color-accent-blue-dark) 100%); box-shadow: 0 0 20px rgba(14, 165, 233, 0.3);">
+              <span class="text-2xl font-bold" style="color: var(--color-dark-bg); font-family: 'DM Sans', sans-serif;">
+                {step.number}
+              </span>
+            </div>
+            <h3 class="text-2xl font-bold tracking-wide" style="font-family: 'DM Sans', sans-serif; color: var(--color-text-primary); letter-spacing: 0.05em;">
+              {step.title}
+            </h3>
           </div>
-          <div>
-            <h3 class="text-xl font-bold mb-3">STEP {step.number}: {step.title}</h3>
-            <p class="text-gray-700">{step.description}</p>
-          </div>
+          <p class="text-lg leading-relaxed" style="color: var(--color-text-secondary);">
+            {step.description}
+          </p>
         </div>
       </div>
     ))}
   </div>
 </Section>
+
+<style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .card {
+    animation: fadeInUp 0.6s ease-out backwards;
+  }
+</style>

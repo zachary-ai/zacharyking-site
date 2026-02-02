@@ -13,18 +13,18 @@ const {
   class: className = ''
 } = Astro.props;
 
-const baseStyles = 'inline-block font-semibold rounded-lg transition-colors duration-200 text-center';
+const baseStyles = 'inline-block font-semibold rounded-xl transition-all duration-300 text-center';
 
 const variantStyles = {
-  primary: 'bg-blue-600 text-white hover:bg-blue-700',
-  secondary: 'bg-gray-200 text-gray-900 hover:bg-gray-300',
-  outline: 'border-2 border-blue-600 text-blue-600 hover:bg-blue-50'
+  primary: 'btn-primary',
+  secondary: 'btn-secondary',
+  outline: 'border-2 border-[var(--color-border)] text-[var(--color-text-primary)] hover:border-[var(--color-accent-blue)] hover:text-[var(--color-accent-blue)] hover:shadow-[0_0_20px_rgba(14,165,233,0.2)]'
 };
 
 const sizeStyles = {
-  sm: 'px-4 py-2 text-sm',
-  md: 'px-6 py-3 text-base',
-  lg: 'px-8 py-4 text-lg'
+  sm: 'px-5 py-2.5 text-sm',
+  md: 'px-7 py-3.5 text-base',
+  lg: 'px-9 py-4 text-lg'
 };
 
 const classes = `${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`;
@@ -32,6 +32,6 @@ const classes = `${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${c
 const Element = href ? 'a' : 'button';
 ---
 
-<Element href={href} class={classes}>
+<Element href={href} class={classes} style="font-family: 'DM Sans', sans-serif;">
   <slot />
 </Element>

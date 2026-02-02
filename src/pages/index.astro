@@ -7,13 +7,61 @@ import SwarmOverview from '../components/home/SwarmOverview.astro';
 import HowItWorks from '../components/home/HowItWorks.astro';
 import Services from '../components/home/Services.astro';
 import WhoFor from '../components/home/WhoFor.astro';
+import FAQ from '../components/home/FAQ.astro';
 import CTA from '../components/home/CTA.astro';
 ---
 
 <Layout
-  title="Zachary King - AI-Powered GTM Systems for Startups"
-  description="I build AI-powered GTM systems for startups. Strategy. Playbook. AI Swarm. Everything your team needs to sell — developed, documented, and deployed on AI."
+  title="Zachary King - AI-Powered GTM Infrastructure for Startups"
+  description="Build AI-powered GTM infrastructure that runs your sales motion after I leave. From founder-led chaos to repeatable pipeline in 90 days."
 >
+  <!-- Schema.org structured data for SEO -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "GTM Swarm - Zachary King",
+    "alternateName": "Zachary King Fractional GTM",
+    "url": "https://zacharyking.com.au",
+    "logo": "https://zacharyking.com.au/favicon.svg",
+    "description": "AI-powered GTM infrastructure for startups. Build sales systems that keep working after I leave.",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Australia"
+    },
+    "serviceType": ["Fractional GTM Leadership", "AI Sales Infrastructure", "Sales Automation", "GTM Strategy"],
+    "founder": {
+      "@type": "Person",
+      "name": "Zachary King",
+      "jobTitle": "Fractional GTM Leader"
+    },
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "GTM Diagnostic",
+        "price": "4500",
+        "priceCurrency": "AUD"
+      },
+      {
+        "@type": "Offer",
+        "name": "GTM Swarm Sprint",
+        "price": "30000",
+        "priceCurrency": "AUD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Fractional GTM",
+        "price": "9000",
+        "priceCurrency": "AUD",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "9000",
+          "priceCurrency": "AUD",
+          "unitText": "MONTH"
+        }
+      }
+    ]
+  })} />
+
   <Hero />
   <Problem />
   <Solution />
@@ -21,5 +69,6 @@ import CTA from '../components/home/CTA.astro';
   <HowItWorks />
   <Services />
   <WhoFor />
+  <FAQ />
   <CTA />
 </Layout>

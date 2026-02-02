@@ -1,4 +1,6 @@
+# Allow all crawlers
 User-agent: *
 Allow: /
 
-Sitemap: https://zacharyking.com.au/sitemap-index.xml
+# Sitemap location
+Sitemap: https://zacharyking.com.au/sitemap.xml

@@ -5,48 +5,112 @@ import Button from '../components/ui/Button.astro';
 ---
 
 <Layout
-  title="About - Zachary King"
-  description="20+ years in B2B sales, now building AI-native GTM systems for startups. Not just strategy decks. Not just playbooks. Actual systems that run on AI."
+  title="About - Zachary King | Fractional GTM Leader"
+  description="20+ years in B2B sales building AI-powered GTM systems for startups. Actual infrastructure that keeps working after I leave, not strategy decks."
 >
-  <Section id="about-hero" background="white">
+  <Section id="about-hero" background="dark">
     <div class="max-w-4xl mx-auto">
-      <h1 class="mb-8">About</h1>
+      <h1 class="mb-8" style="color: var(--color-text-primary);">About</h1>
 
       <div class="prose prose-lg max-w-none">
-        <p class="text-xl text-gray-700 mb-6">
-          I've spent 20+ years in B2B sales — from early-stage startups to running Asia for a $900M adtech company. I've launched markets, built teams, and closed enterprise deals across three continents.
+        <p class="text-xl mb-6" style="color: var(--color-text-secondary);">
+          I've spent 20+ years in B2B sales - from early-stage startups to running Asia for a $900M adtech company. I've launched markets, built teams, and closed enterprise deals across three continents.
         </p>
 
-        <p class="text-xl text-gray-700 mb-6">
-          Now I work exclusively with startups building AI-native GTM systems.
+        <p class="text-2xl mb-8 italic" style="color: var(--color-text-primary); font-weight: 500;">
+          I've sold things you wouldn't believe.
         </p>
 
-        <p class="text-xl text-gray-700 mb-6">
-          Not just strategy decks. Not just playbooks. Actual systems that run on AI and keep working after I leave.
+        <!-- Speaking Photo -->
+        <div class="my-12 rounded-xl overflow-hidden" style="background: var(--color-dark-elevated); border: 1px solid var(--color-border);">
+          <img
+            src="/images/southstart.jpg"
+            alt="Zachary King at SouthStart startup conference"
+            loading="lazy"
+            class="w-full h-auto"
+            style="display: block;"
+          />
+          <div class="p-6">
+            <p class="text-base italic" style="color: var(--color-text-secondary);">
+              At SouthStart, one of Australia's leading startup conferences
+            </p>
+          </div>
+        </div>
+
+        <p class="text-xl mb-6" style="color: var(--color-text-secondary);">
+          Now I work exclusively with startups as a fractional GTM leader, building intelligent systems that stay.
         </p>
 
-        <p class="text-xl text-gray-700 mb-6">
-          I'm deep in the weeds with Claude, automations, and agent workflows. I use AI daily in my own work and I build it into everything I deliver to clients.
+        <p class="text-xl mb-6" style="color: var(--color-text-secondary);">
+          Not just strategy decks. Not just playbooks. Actual infrastructure that keeps working after I leave.
         </p>
 
-        <div class="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
-          <p class="text-xl font-semibold text-gray-900">
-            If your GTM isn't leveraging AI yet, you're already behind.
+        <p class="text-xl mb-6" style="color: var(--color-text-secondary);">
+          I embed AI into everything I deliver - intelligent agents, automated workflows, and systems that learn from your playbook. Works with Claude, Microsoft Copilot, and other enterprise AI platforms.
+        </p>
+
+        <div class="p-8 my-8 rounded-xl" style="background: var(--color-dark-elevated); border-left: 4px solid var(--color-accent-blue);">
+          <p class="text-xl font-semibold" style="color: var(--color-text-primary);">
+            Most GTM teams are still doing manual prospect research, copying talk tracks from Docs, and updating CRMs by hand. There's a better way.
           </p>
         </div>
 
-        <p class="text-xl text-gray-700 mb-6">
-          I work with product-obsessed founders who want sales without killing the founder vibe. Startups who've proven the product works and now need to structure growth without hiring a full-time VP Sales.
+        <p class="text-xl mb-6" style="color: var(--color-text-secondary);">
+          I work with product-obsessed founders who want sales without killing the founder vibe. Startups who've proven the product works and now need GTM leadership and systems without hiring a full-time VP Sales.
         </p>
 
-        <p class="text-xl text-gray-700 mb-8">
+        <p class="text-xl mb-8" style="color: var(--color-text-secondary);">
           If that sounds like you, let's talk.
         </p>
 
-        <div class="text-center">
-          <Button href="/contact" variant="primary" size="lg">
+        <div class="text-center mb-16">
+          <Button href="https://savvycal.com/Zachary-King/b18fb593" variant="primary" size="lg">
             Book a Call
           </Button>
+        </div>
+
+        <!-- Speaking & Events Section -->
+        <div class="border-t pt-12" style="border-color: var(--color-border);">
+          <h2 class="text-3xl font-bold mb-8" style="color: var(--color-text-primary); font-family: 'DM Sans', sans-serif;">
+            Speaking & Events
+          </h2>
+          <p class="text-lg mb-8" style="color: var(--color-text-secondary);">
+            I regularly speak at Australian startup events on fractional leadership, GTM strategy, and building systems that scale.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="rounded-xl overflow-hidden" style="background: var(--color-dark-elevated); border: 1px solid var(--color-border);">
+              <img
+                src="/images/tif-presenting.jpg"
+                alt="Zachary King at Tropical Innovation Festival"
+                loading="lazy"
+                class="w-full h-auto"
+                style="display: block;"
+              />
+              <div class="p-4">
+                <p class="text-sm" style="color: var(--color-text-secondary);">
+                  <strong style="color: var(--color-text-primary);">Tropical Innovation Festival</strong><br />
+                  Speaking at Australian startup events
+                </p>
+              </div>
+            </div>
+
+            <div class="rounded-xl overflow-hidden" style="background: var(--color-dark-elevated); border: 1px solid var(--color-border);">
+              <img
+                src="/images/southstart.jpg"
+                alt="Zachary King at SouthStart startup conference"
+                loading="lazy"
+                class="w-full h-auto"
+                style="display: block;"
+              />
+              <div class="p-4">
+                <p class="text-sm" style="color: var(--color-text-secondary);">
+                  <strong style="color: var(--color-text-primary);">SouthStart</strong><br />
+                  Hosting and participating in startup conferences
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

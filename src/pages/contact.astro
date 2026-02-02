@@ -6,27 +6,31 @@ import CalendlyEmbed from '../components/forms/CalendlyEmbed.astro';
 ---
 
 <Layout
-  title="Contact - Zachary King"
-  description="Book a 30-minute call to discuss your GTM challenges. No pitch deck. Just a conversation about where you're at and whether this is the right fit."
+  title="Contact - Book a GTM Strategy Call"
+  description="Book a 30-minute call to discuss your GTM challenges. No pitch deck. Real conversation about building AI-powered sales infrastructure."
 >
-  <Section id="contact" background="white">
+  <Section id="contact" background="dark">
     <div class="max-w-4xl mx-auto">
       <div class="text-center mb-12">
-        <h1 class="mb-6">Let's Talk</h1>
-        <p class="text-xl text-gray-700">
+        <h1 class="mb-6" style="color: var(--color-text-primary);">Let's Talk</h1>
+        <p class="text-xl" style="color: var(--color-text-secondary);">
           Book a 30-minute call. No pitch deck. Just a conversation about where you're at and whether this is the right fit.
         </p>
       </div>
 
-      {/* Calendly embed - UPDATE URL when you have your Calendly link */}
-      <div class="bg-gray-50 rounded-lg p-8 mb-8">
-        <h3 class="text-2xl font-bold mb-6 text-center">Book a 30-Minute Call</h3>
-        <CalendlyEmbed url="https://calendly.com/your-username/30min" />
+      <!-- SavvyCal booking link -->
+      <div class="rounded-lg p-8 mb-8" style="background: var(--color-dark-surface); border: 1px solid var(--color-border);">
+        <h3 class="text-2xl font-bold mb-6 text-center" style="color: var(--color-text-primary);">Book a 30-Minute Call</h3>
+        <div class="text-center">
+          <a href="https://savvycal.com/Zachary-King/b18fb593" class="btn-primary inline-block text-lg px-8 py-4">
+            Book a Call
+          </a>
+        </div>
       </div>
 
-      {/* Contact form with Netlify integration */}
-      <div class="bg-white border-2 border-gray-200 rounded-lg p-8">
-        <h3 class="text-2xl font-bold mb-6">Or Send a Message</h3>
+      <!-- Contact form with Netlify integration -->
+      <div class="rounded-lg p-8" style="background: var(--color-dark-elevated); border: 1px solid var(--color-border);">
+        <h3 class="text-2xl font-bold mb-6" style="color: var(--color-text-primary);">Or Send a Message</h3>
         <ContactForm />
       </div>
     </div>

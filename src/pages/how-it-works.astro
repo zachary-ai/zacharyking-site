@@ -7,66 +7,66 @@ const steps = [
     number: '1',
     title: 'DIAGNOSE',
     subtitle: 'Understand where you are and what needs fixing',
-    description: 'I audit your current GTM — funnel, process, messaging, team, tools. You get a clear diagnosis of what\'s working, what\'s creating drag, and what to fix first.',
+    description: 'I audit your current GTM and tell you exactly what\'s broken, what\'s creating drag, and which 3 things to fix first. You stop guessing and start executing on the highest-leverage changes.',
     deliverables: [
-      'GTM audit report',
-      'Funnel and conversion analysis',
-      'Messaging and positioning review',
-      'Tool stack assessment',
-      '90-day roadmap with priorities'
+      'Know exactly what\'s broken and what to fix first—not just a list of problems',
+      'See where qualified leads are dying in your funnel',
+      'Understand which messaging is landing and which isn\'t',
+      'Identify which tools are helping and which are just costing money',
+      'Execute on a prioritized 90-day roadmap instead of random tactics'
     ]
   },
   {
     number: '2',
     title: 'BUILD',
-    subtitle: 'Create your playbook and deploy your AI swarm',
-    description: 'I develop your complete GTM playbook and deploy your custom AI swarm inside Claude. Six specialized agents trained on your exact strategy.',
+    subtitle: 'Create your playbook and deploy AI infrastructure',
+    description: 'I build your complete sales playbook and deploy it as AI infrastructure on your platform. Your team gets instant answers to "What do I say about pricing?" or "How do I handle this objection?"—without digging through Docs.',
     deliverables: [
-      'Complete sales playbook (15-25K words)',
-      'ICP and buyer persona documentation',
-      'Messaging frameworks and talk tracks',
-      '6 specialized AI agents deployed',
-      'Email sequences and outbound templates'
+      'A sales playbook your team actually uses—not a Google Doc they ignore',
+      'Know who your ideal customers are and how to find them',
+      'Give your team the exact words to say in every situation',
+      'Six AI specialists that handle research, messaging, and objections 24/7—so your team focuses on conversations, not prep work',
+      'Launch outbound campaigns with proven sequences—not another "just checking in" email'
     ]
   },
   {
     number: '3',
     title: 'TRAIN',
     subtitle: 'Enable your team to use the system effectively',
-    description: 'I train your team to use the swarm effectively. Best practices, common workflows, and when to use which agent.',
+    description: 'I train your team on the swarm through live sessions and real deal support. They learn by doing—using the agents on active opportunities, not hypothetical scenarios.',
     deliverables: [
-      'Team training sessions',
-      'Agent workflow documentation',
-      'Best practices guide',
-      'Live coaching on active deals',
-      'Q&A and troubleshooting'
+      'Reps learn by using the swarm on real deals, not hypothetical scenarios',
+      'Get instant support when questions come up during actual sales calls',
+      'Build muscle memory through live coaching on active opportunities',
+      'Troubleshoot real objections and positioning challenges as they happen',
+      'Confidence to run deals independently instead of constantly asking "what should I do?"'
     ]
   },
   {
     number: '4',
     title: 'SCALE',
     subtitle: 'The system continues working without me',
-    description: 'You keep access. I provide quarterly updates and async support. The system runs without me.',
+    description: 'You keep everything—agents, playbook, workflows. I provide quarterly updates and async support if needed. New hires onboard faster because the system trains them. The infrastructure compounds as your team uses it.',
     deliverables: [
-      'Ongoing swarm access',
-      'Quarterly playbook updates',
-      'Async support (Slack/email)',
-      'New features as they\'re released',
-      'Optional: Swarm Subscription for continued updates'
+      'Keep all the AI agents, playbook, and workflows—no dependency on me',
+      'New hires onboard in weeks, not months, because the system trains them',
+      'Get quarterly updates with new features and messaging improvements',
+      'Access async support when questions surface',
+      'The infrastructure gets smarter as your team uses it—not stale like a PDF'
     ]
   }
 ];
 ---
 
 <Layout
-  title="How It Works - Zachary King"
-  description="A 4-step process: Diagnose, Build, Train, Scale. From GTM audit to AI swarm deployment in 60-90 days."
+  title="How It Works - 4-Step GTM Swarm Process"
+  description="Diagnose GTM gaps, build AI infrastructure, train your team, scale independently. From chaos to repeatable sales motion in 90 days."
 >
-  <Section id="how-it-works-hero" background="white">
+  <Section id="how-it-works-hero" background="dark">
     <div class="text-center max-w-4xl mx-auto mb-16">
-      <h1 class="mb-6">How It Works</h1>
-      <p class="text-xl text-gray-700">
-        A structured 4-step process from GTM audit to AI swarm deployment. Most engagements complete in 60-90 days.
+      <h1 class="mb-6" style="color: var(--color-text-primary);">From diagnosis to deployed swarm in 90 days</h1>
+      <p class="text-xl" style="color: var(--color-text-secondary);">
+        A structured 4-step process: Diagnose, Build, Train, Scale. Your GTM infrastructure stays with you after I leave.
       </p>
     </div>
 
@@ -75,30 +75,30 @@ const steps = [
         <div class="relative">
           {/* Connector line for non-last items */}
           {index < steps.length - 1 && (
-            <div class="hidden md:block absolute left-6 top-20 bottom-0 w-0.5 bg-blue-200" />
+            <div class="hidden md:block absolute left-6 top-20 bottom-0 w-0.5" style="background: var(--color-accent-blue); opacity: 0.3;" />
           )}
 
           <div class="flex items-start gap-6">
             {/* Number circle */}
-            <div class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold z-10">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold z-10" style="background: var(--color-accent-blue); color: var(--color-dark-bg);">
               {step.number}
             </div>
 
             {/* Content */}
             <div class="flex-grow">
-              <h2 class="text-3xl font-bold mb-2">STEP {step.number}: {step.title}</h2>
-              <p class="text-xl text-blue-600 mb-4">{step.subtitle}</p>
-              <p class="text-lg text-gray-700 mb-6">{step.description}</p>
+              <h2 class="text-3xl font-bold mb-2" style="color: var(--color-text-primary);">STEP {step.number}: {step.title}</h2>
+              <p class="text-xl mb-4" style="color: var(--color-accent-blue);">{step.subtitle}</p>
+              <p class="text-lg mb-6" style="color: var(--color-text-secondary);">{step.description}</p>
 
-              <div class="bg-gray-50 rounded-lg p-6">
-                <h4 class="font-bold text-lg mb-3">Deliverables:</h4>
+              <div class="rounded-lg p-6" style="background: var(--color-dark-elevated);">
+                <h4 class="font-bold text-lg mb-3" style="color: var(--color-text-primary);">Deliverables:</h4>
                 <ul class="space-y-2">
                   {step.deliverables.map((deliverable) => (
                     <li class="flex items-start gap-2">
-                      <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                      <svg class="w-5 h-5 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20" style="color: var(--color-accent-blue);">
                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                       </svg>
-                      <span class="text-gray-700">{deliverable}</span>
+                      <span style="color: var(--color-text-secondary);">{deliverable}</span>
                     </li>
                   ))}
                 </ul>
@@ -110,13 +110,13 @@ const steps = [
     </div>
   </Section>
 
-  <Section id="how-cta" background="gray">
+  <Section id="how-cta" background="elevated">
     <div class="text-center max-w-3xl mx-auto">
-      <h2 class="mb-6">Ready to get started?</h2>
-      <p class="text-xl text-gray-700 mb-8">
+      <h2 class="mb-6" style="color: var(--color-text-primary);">Ready to get started?</h2>
+      <p class="text-xl mb-8" style="color: var(--color-text-secondary);">
         Book a 30-minute call to discuss your GTM challenges and see if this approach is right for you.
       </p>
-      <a href="/contact" class="btn-primary inline-block">
+      <a href="https://savvycal.com/Zachary-King/b18fb593" class="btn-primary inline-block">
         Book a Call
       </a>
     </div>

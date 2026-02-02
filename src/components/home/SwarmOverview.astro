@@ -4,57 +4,59 @@ import AgentCard from '../ui/AgentCard.astro';
 
 const agents = [
   {
-    icon: '🎯',
+    iconType: 'target' as const,
     name: 'Prospecting Agent',
-    description: 'ICP targeting, outbound sequences, lead research'
+    description: "Find companies that match your ICP, research decision-makers, and draft personalized outbound emails—without spending hours on LinkedIn"
   },
   {
-    icon: '🔍',
+    iconType: 'search' as const,
     name: 'Discovery Agent',
-    description: 'Qualifying questions, call prep, needs analysis'
+    description: "Walk into every discovery call with pre-built questions, qualification criteria, and research on their tech stack—so you sound like an expert, not a vendor"
   },
   {
-    icon: '🎤',
+    iconType: 'presentation' as const,
     name: 'Demo Agent',
-    description: 'Value prop delivery, presentation flow, ROI building'
+    description: "Deliver the exact value prop for their use case, map features to their pain points, and build ROI in real-time—without generic slides"
   },
   {
-    icon: '🛡️',
+    iconType: 'shield' as const,
     name: 'Objection Agent',
-    description: 'Handle pushback, competitive positioning, reframes'
+    description: "Respond to objections with proven reframes, differentiate against competitors they're evaluating, and turn pushback into buying signals—without freezing up"
   },
   {
-    icon: '♟️',
+    iconType: 'strategy' as const,
     name: 'Deal Strategy Agent',
-    description: 'Multi-threading, account mapping, closing tactics'
+    description: "Map buying committees, identify blockers before they surface, and build multi-threaded relationships—so deals don't die with one champion"
   },
   {
-    icon: '📊',
+    iconType: 'chart' as const,
     name: 'RevOps Agent',
-    description: 'Pipeline hygiene, forecasting, CRM guidance'
+    description: "Keep your CRM clean automatically, forecast with real data instead of gut feel, and spot pipeline risks before they kill your quarter—without manual data entry"
   }
 ];
 ---
 
-<Section id="swarm-overview" background="gray">
-  <div class="text-center mb-12">
-    <h2 class="mb-6">What Is GTM Swarm?</h2>
-    <p class="text-xl text-gray-700 max-w-3xl mx-auto">
-      Not one AI assistant. A team of six specialized agents, each trained on a different part of your sales motion:
+<Section id="swarm-overview" background="elevated">
+  <div class="text-center mb-16">
+    <h2 class="mb-8">What Is GTM Swarm?</h2>
+    <p class="text-2xl max-w-4xl mx-auto" style="color: var(--color-text-secondary);">
+      Not one AI assistant. A team of <span class="gradient-text font-semibold">six specialized agents</span>, each trained on a different part of your sales motion:
     </p>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
     {agents.map((agent) => (
       <AgentCard
-        icon={agent.icon}
+        iconType={agent.iconType}
         name={agent.name}
         description={agent.description}
       />
     ))}
   </div>
 
-  <p class="text-center text-lg text-gray-700">
-    All trained on <strong>YOUR</strong> playbook. All accessible to your team in Claude.
-  </p>
+  <div class="text-center">
+    <p class="text-xl max-w-3xl mx-auto" style="color: var(--color-text-secondary);">
+      All trained on <strong style="color: var(--color-text-primary);">YOUR</strong> playbook. Deployed on your AI platform (Claude, Microsoft Copilot, or other enterprise platforms).
+    </p>
+  </div>
 </Section>

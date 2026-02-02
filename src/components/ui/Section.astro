@@ -3,20 +3,21 @@ export interface Props {
   id?: string;
   class?: string;
   containerClass?: string;
-  background?: 'white' | 'gray' | 'dark';
+  background?: 'dark' | 'surface' | 'elevated' | 'grid';
 }
 
 const {
   id,
   class: className = '',
   containerClass = '',
-  background = 'white'
+  background = 'dark'
 } = Astro.props;
 
 const bgStyles = {
-  white: 'bg-white',
-  gray: 'bg-gray-50',
-  dark: 'bg-gray-900 text-white'
+  dark: 'bg-dark',
+  surface: 'bg-dark-surface',
+  elevated: 'bg-dark-elevated',
+  grid: 'bg-dark grid-bg'
 };
 
 const sectionClasses = `section-padding ${bgStyles[background]} ${className}`;

@@ -4,45 +4,50 @@ const navLinks = [
   { name: 'About', href: '/about' },
   { name: 'Services', href: '/services' },
   { name: 'How It Works', href: '/how-it-works' },
+  { name: 'FAQ', href: '/faq' },
   { name: 'Contact', href: '/contact' },
 ];
 
 const currentPath = Astro.url.pathname;
 ---
 
-<header class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
-  <nav class="section-container py-4">
+<header class="fixed top-0 left-0 right-0 z-50 bg-dark-surface/95 backdrop-blur-md border-b border-[var(--color-border)]">
+  <nav class="section-container py-6">
     <div class="flex items-center justify-between">
       <!-- Logo -->
-      <a href="/" class="text-2xl font-bold text-gray-900">
+      <a href="/" class="text-2xl font-bold text-[var(--color-text-primary)] hover:text-[var(--color-accent-blue)] transition-colors duration-300" style="font-family: 'DM Sans', sans-serif; letter-spacing: -0.01em;">
         Zachary King
       </a>
 
       <!-- Desktop Navigation -->
-      <ul class="hidden md:flex items-center space-x-8">
+      <ul class="hidden md:flex items-center space-x-10">
         {navLinks.map((link) => (
           <li>
             <a
               href={link.href}
-              class={`text-gray-700 hover:text-blue-600 transition-colors duration-200 ${
-                currentPath === link.href ? 'text-blue-600 font-semibold' : ''
+              class={`text-[var(--color-text-secondary)] hover:text-[var(--color-accent-blue)] font-medium transition-all duration-300 relative group ${
+                currentPath === link.href ? 'text-[var(--color-accent-blue)]' : ''
               }`}
+              style="font-family: 'Inter', sans-serif;"
             >
               {link.name}
+              <span class={`absolute bottom-0 left-0 h-0.5 bg-[var(--color-accent-blue)] transition-all duration-300 ${
+                currentPath === link.href ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
             </a>
           </li>
         ))}
       </ul>
 
       <!-- CTA Button -->
-      <a href="/contact" class="hidden md:inline-block btn-primary">
-        Book a Call
+      <a href="https://savvycal.com/Zachary-King/b18fb593" class="hidden md:inline-block btn-primary text-base">
+        Get Started
       </a>
 
       <!-- Mobile Menu Button -->
       <button
         id="mobile-menu-button"
-        class="md:hidden p-2 text-gray-700 hover:text-blue-600"
+        class="md:hidden p-2 rounded-lg hover:bg-dark-elevated transition-colors duration-200 text-[var(--color-text-primary)]"
         aria-label="Toggle menu"
       >
         <svg
@@ -62,23 +67,23 @@ const currentPath = Astro.url.pathname;
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden pt-4 pb-2">
-      <ul class="space-y-2">
+    <div id="mobile-menu" class="hidden md:hidden pt-6 pb-2 border-t border-[var(--color-border)] mt-6">
+      <ul class="space-y-3">
         {navLinks.map((link) => (
           <li>
             <a
               href={link.href}
-              class={`block py-2 text-gray-700 hover:text-blue-600 transition-colors duration-200 ${
-                currentPath === link.href ? 'text-blue-600 font-semibold' : ''
+              class={`block py-2 text-[var(--color-text-secondary)] hover:text-[var(--color-accent-blue)] transition-colors duration-300 ${
+                currentPath === link.href ? 'text-[var(--color-accent-blue)] font-semibold' : ''
               }`}
             >
               {link.name}
             </a>
           </li>
         ))}
-        <li class="pt-2">
-          <a href="/contact" class="block text-center btn-primary">
-            Book a Call
+        <li class="pt-4">
+          <a href="https://savvycal.com/Zachary-King/b18fb593" class="block text-center btn-primary text-base">
+            Get Started
           </a>
         </li>
       </ul>
@@ -87,7 +92,7 @@ const currentPath = Astro.url.pathname;
 </header>
 
 <!-- Spacer for fixed header -->
-<div class="h-20"></div>
+<div class="h-24"></div>
 
 <script>
   // Mobile menu toggle

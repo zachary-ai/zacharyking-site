@@ -1,0 +1,192 @@
+---
+import Layout from '../components/layout/Layout.astro';
+import Section from '../components/ui/Section.astro';
+
+const faqs = [
+  {
+    category: "Service & Engagement",
+    questions: [
+      {
+        q: "Why not just hire a full-time VP Sales?",
+        a: "Three reasons: Speed (I deploy in weeks, not months), cost (1/3 the price of a full-time exec), and outcome (you get working systems, not just strategy). When you do hire a VP Sales, they inherit infrastructure instead of starting from scratch. Most startups hire me to build the foundation, then hire a VP to scale it."
+      },
+      {
+        q: "How is this different from a traditional sales consultant?",
+        a: "I don't give you a strategy deck that sits in Google Drive. I embed as your GTM leader and build AI-powered infrastructure that runs your sales motion after I leave. You get working systems (agents, playbooks, workflows) that your team uses daily, not advice they forget in 30 days."
+      },
+      {
+        q: "What if I already have a CRM or sales tools?",
+        a: "Perfect. I build on your existing platforms, not replace them. Whether you use HubSpot, Salesforce, Pipedrive, or Apollo—I deploy AI infrastructure on YOUR tools. You're not adding another SaaS subscription. The swarm works with what you already have."
+      },
+      {
+        q: "How long does a typical engagement last?",
+        a: "Most engagements are 90 days for the GTM Swarm Sprint (full playbook + AI infrastructure deployment). The GTM Diagnostic is 1 week. Fractional GTM is flexible 3-6 month engagements. After the sprint, you can continue with the Swarm Subscription ($1.5K/month) for ongoing updates and support."
+      },
+      {
+        q: "What happens after you leave?",
+        a: "You keep everything—the AI agents, sales playbook, workflows, and all IP. The infrastructure stays in YOUR systems and continues working. I provide quarterly updates and async support if you subscribe, but the core system runs independently. New hires onboard faster because the system trains them."
+      }
+    ]
+  },
+  {
+    category: "AI & Technology",
+    questions: [
+      {
+        q: "Why not just use Gong, Clari, SalesLoft, or other AI sales tools?",
+        a: "Those are great tools—for companies with mature GTM already. Gong records calls. Clari forecasts deals. SalesLoft sequences emails. But they assume you already have: ICP definition, messaging frameworks, sales process, and a playbook. I build that foundation first, then deploy AI on YOUR platforms. If you already use those tools, perfect—I'll integrate with them."
+      },
+      {
+        q: "Which AI platforms do you use?",
+        a: "I'm platform-agnostic. The GTM Swarm works with Claude (Anthropic), Microsoft Copilot, ChatGPT, or other enterprise AI platforms. I deploy on whatever your team already uses or is most comfortable with. The goal is infrastructure in YOUR systems, not dependency on mine."
+      },
+      {
+        q: "Do I need to be technical to use the AI swarm?",
+        a: "No. Your team interacts with the agents through natural conversation—asking questions like 'What should I say about pricing to a CFO?' or 'How do I handle this objection?' No coding required. I handle all the technical setup and training."
+      },
+      {
+        q: "What's the difference between one AI assistant and six specialized agents?",
+        a: "One generic chatbot tries to do everything and does nothing well. Six specialists each handle a specific part of your sales motion: prospecting, discovery, demos, objections, deal strategy, and RevOps. Like having a GTM team in your AI platform—each agent is trained on your exact playbook for their domain."
+      }
+    ]
+  },
+  {
+    category: "Pricing & ROI",
+    questions: [
+      {
+        q: "How much does this cost?",
+        a: "Four engagement models: GTM Diagnostic ($4.5K, 1 week), GTM Swarm Sprint ($30K, 90 days), Fractional GTM ($9K/month, 3-6 months), and Swarm Subscription ($1.5K/month, ongoing). Most clients start with the Diagnostic or Sprint depending on urgency and budget."
+      },
+      {
+        q: "What's the ROI?",
+        a: "Time savings: 8-12 hours per client freed up from manual research, CRM work, and rep coaching. Revenue impact: Clients typically see 3-5 more qualified meetings per month from improved outbound and faster deal velocity from trained reps. The infrastructure compounds—new hires ramp in weeks instead of months."
+      },
+      {
+        q: "Do you offer payment plans?",
+        a: "Yes. The GTM Swarm Sprint ($30K) can be split across the 90-day engagement. Fractional GTM is monthly billing. Reach out and we'll work out a structure that fits your cash flow."
+      }
+    ]
+  },
+  {
+    category: "Ideal Fit",
+    questions: [
+      {
+        q: "What stage companies do you work with?",
+        a: "Tech-based startups and early-stage companies in the $1-10M revenue range (or strong traction if pre-revenue). Typically post-funding, moving from founder-led sales to scalable GTM. If you're bottlenecking every deal and reps can't close without you, we're a good fit."
+      },
+      {
+        q: "Do you only work with B2B SaaS?",
+        a: "No. While most clients are B2B SaaS, I work with any tech-based startup scaling enterprise growth—AI companies, workflow platforms, marketplace businesses. The key is you're ready to move from founder-dependent sales to repeatable systems."
+      },
+      {
+        q: "What if I don't have a sales team yet?",
+        a: "Even better. I build the playbook and AI infrastructure BEFORE you hire, so your first sales hire inherits working systems instead of starting from scratch. They ramp in weeks, not months."
+      },
+      {
+        q: "What if I already tried a consultant and it didn't work?",
+        a: "That's exactly the problem I solve. Traditional consultants leave you with a playbook that sits unused because there's no infrastructure to hold the knowledge. I build systems that run your GTM motion—agents that answer questions, workflows that automate research, processes that enforce the playbook. The expertise doesn't decay."
+      }
+    ]
+  },
+  {
+    category: "Process & Deliverables",
+    questions: [
+      {
+        q: "What does the GTM Diagnostic include?",
+        a: "A 1-week deep dive: I audit your funnel, process, messaging, and tools. You get a clear diagnosis of what's broken, a prioritized 90-day roadmap, and your first outbound campaign ready to launch (300+ prospects seeded). You walk away knowing exactly what to fix first."
+      },
+      {
+        q: "What's included in the GTM Swarm Sprint?",
+        a: "Complete sales playbook (documented, not a PDF), 6 AI agents deployed on your platform, outbound engine with live campaigns (600+ prospects contacted), weekly sales rhythm established, customer interview validation (3-5 conversations), and AI-powered automation in YOUR tools (saves 8-12 hrs/client). Everything stays with you after I leave."
+      },
+      {
+        q: "How hands-on are you during the engagement?",
+        a: "Very. I embed as your GTM leader—running live deals, coaching your team, building the infrastructure, and deploying AI systems. This isn't advice from the sidelines. I'm in your CRM, on your sales calls, and in your tools daily."
+      },
+      {
+        q: "Do you create content or just sales systems?",
+        a: "Primary focus is sales infrastructure (playbook, AI swarm, outbound engine). But I can help with GTM-adjacent content like case studies, sales enablement materials, and messaging frameworks if that's part of your roadmap."
+      }
+    ]
+  },
+  {
+    category: "Getting Started",
+    questions: [
+      {
+        q: "How do I know if this is right for me?",
+        a: "Book a 30-minute call. No pitch deck, no hard sell. We'll talk through where your GTM is stuck, whether you're a good fit for the approach, and which engagement model makes sense. If I can't help, I'll tell you."
+      },
+      {
+        q: "What do I need to prepare before we start?",
+        a: "Access to your CRM, sales tools, and any existing playbooks or messaging. A list of your best customers (for ICP validation). Availability for 1-hour weekly meetings during the engagement. That's it."
+      },
+      {
+        q: "Can you work with remote/distributed teams?",
+        a: "Yes. All my engagements are remote. I'm based in Australia but work with teams globally. As long as we can align on 1-hour weekly calls and async communication (Slack/email), geography doesn't matter."
+      }
+    ]
+  }
+];
+---
+
+<Layout
+  title="FAQ - GTM Swarm Questions | AI Sales Infrastructure"
+  description="Answers about AI-powered GTM systems, fractional leadership, pricing, and engagement models. Learn how infrastructure stays after I leave."
+>
+  <!-- Schema.org FAQ markup for SEO -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.flatMap(category =>
+      category.questions.map(faq => ({
+        "@type": "Question",
+        "name": faq.q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.a
+        }
+      }))
+    )
+  })} />
+
+  <Section id="faq-hero" background="dark">
+    <div class="text-center max-w-4xl mx-auto mb-16">
+      <h1 class="mb-6" style="color: var(--color-text-primary);">Frequently Asked Questions</h1>
+      <p class="text-xl" style="color: var(--color-text-secondary);">
+        Common questions about GTM Swarm, AI infrastructure, engagement models, and how it all works.
+      </p>
+    </div>
+
+    <div class="max-w-4xl mx-auto space-y-12">
+      {faqs.map((category) => (
+        <div>
+          <h2 class="text-2xl font-bold mb-6" style="color: var(--color-accent-blue);">{category.category}</h2>
+
+          <div class="space-y-6">
+            {category.questions.map((faq) => (
+              <div class="rounded-lg p-6" style="background: var(--color-dark-elevated); border-left: 3px solid var(--color-accent-blue);">
+                <h3 class="text-xl font-semibold mb-3" style="color: var(--color-text-primary);">
+                  {faq.q}
+                </h3>
+                <p class="text-lg leading-relaxed" style="color: var(--color-text-secondary);">
+                  {faq.a}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </Section>
+
+  <Section id="faq-cta" background="elevated">
+    <div class="text-center max-w-3xl mx-auto">
+      <h2 class="mb-6" style="color: var(--color-text-primary);">Still have questions?</h2>
+      <p class="text-xl mb-8" style="color: var(--color-text-secondary);">
+        Book a 30-minute call. No pitch deck, no hard sell—just a real conversation about whether this approach fits your GTM challenges.
+      </p>
+      <a href="https://savvycal.com/Zachary-King/b18fb593" class="btn-primary inline-block">
+        Book a Call
+      </a>
+    </div>
+  </Section>
+</Layout>

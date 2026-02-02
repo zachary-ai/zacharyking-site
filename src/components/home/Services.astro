@@ -5,7 +5,7 @@ import ServiceCard from '../ui/ServiceCard.astro';
 const services = [
   {
     title: 'GTM Diagnostic',
-    price: '$5-7K',
+    price: '$4.5K',
     description: '1-week deep dive. Audit + roadmap + AI opportunity map.',
     features: [
       'Complete GTM audit',
@@ -17,12 +17,12 @@ const services = [
   },
   {
     title: 'GTM Swarm Sprint',
-    price: '$25-35K',
-    description: '60-90 days. Full playbook + AI swarm deployed + team training.',
+    price: '$30K',
+    description: '90 days. Full playbook + AI infrastructure deployed + team training.',
     features: [
       'Complete GTM strategy',
       'Full sales playbook (15-25K words)',
-      '6 specialized AI agents deployed',
+      '6 specialized AI agents deployed on your platform',
       'Team training and enablement',
       '90 days of implementation support'
     ],
@@ -30,13 +30,13 @@ const services = [
   },
   {
     title: 'Fractional GTM',
-    price: '$8-10K/month',
-    description: '3-6 months embedded leadership + playbook + swarm deployment.',
+    price: '$9K/month',
+    description: '3-6 months embedded leadership + playbook + AI infrastructure deployment.',
     features: [
       'Embedded GTM leadership',
       'Strategic planning and execution',
       'Full playbook development',
-      'AI swarm deployment',
+      'AI agent deployment on your platform',
       'Ongoing team coaching',
       'Flexible engagement (3-6 months)'
     ],
@@ -44,10 +44,10 @@ const services = [
   },
   {
     title: 'Swarm Subscription',
-    price: '$1-1.5K/month',
+    price: '$1.5K/month',
     description: 'Ongoing access + quarterly updates + async support.',
     features: [
-      'Continued swarm access',
+      'Continued agent access',
       'Quarterly playbook updates',
       'Async support via Slack/email',
       'New agent features as released'
@@ -57,23 +57,42 @@ const services = [
 ];
 ---
 
-<Section id="services" background="gray">
-  <div class="text-center mb-12">
-    <h2 class="mb-6">Services</h2>
-    <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+<Section id="services" background="surface">
+  <div class="text-center mb-16">
+    <h2 class="mb-8">Services</h2>
+    <p class="text-2xl max-w-3xl mx-auto" style="color: var(--color-text-secondary);">
       Choose the engagement model that fits your stage and needs.
     </p>
   </div>
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-    {services.map((service) => (
-      <ServiceCard
-        title={service.title}
-        price={service.price}
-        description={service.description}
-        features={service.features}
-        featured={service.featured}
-      />
+    {services.map((service, index) => (
+      <div style={`animation-delay: ${index * 0.1}s`} class="fade-in-card">
+        <ServiceCard
+          title={service.title}
+          price={service.price}
+          description={service.description}
+          features={service.features}
+          featured={service.featured}
+        />
+      </div>
     ))}
   </div>
 </Section>
+
+<style>
+  @keyframes fadeInCard {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in-card {
+    animation: fadeInCard 0.6s ease-out backwards;
+  }
+</style>

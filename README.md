@@ -1,6 +1,6 @@
 # zacharyking.com.au
 
-Personal website for Zachary King - AI-Powered GTM Systems for Startups.
+Personal website for Zachary King - Fractional GTM Leader.
 
 Built with Astro + Tailwind CSS, deployed on Netlify.
 
