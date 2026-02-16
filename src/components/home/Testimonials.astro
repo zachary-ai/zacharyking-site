@@ -1,0 +1,346 @@
+---
+import Section from '../ui/Section.astro';
+
+const testimonials = [
+  {
+    quote: "When Zac stepped in, it was like a light switch flipped — everything finally made sense. He brought more structure and clarity than anyone else we'd engaged. His style and approach is something I genuinely want to adopt in my own sales career.",
+    name: "Kathryn McClunie",
+    title: "Business Development Manager",
+    company: "JAVLN",
+    featured: true
+  },
+  {
+    quote: "Zachary built our enterprise sales offering by pinpointing market opportunities, engaging with clients, and continuously refining based on their feedback. He also levelled up our existing sales team and introduced a structured sales process. His blend of strategic insight and hands-on expertise allowed him to deliver significant impact quickly at Avaana.",
+    name: "Rohan Pardasani",
+    title: "Founder",
+    company: "Avaana",
+    featured: false
+  },
+  {
+    quote: "Working with Zac has been a game-changer for Winely. His keen eye for detail and deep understanding of scalable sales processes have been invaluable. Zac didn't just offer generic advice; he took the time to understand our unique challenges and tailored his recommendations accordingly. The process he built is fully scalable, delivering an ROI that enables us to focus on other critical areas of our business.",
+    name: "Abbe Hyde",
+    title: "Founder & CPO",
+    company: "Winely",
+    featured: false
+  },
+  {
+    quote: "Working with Zachary transformed Brieft's trajectory. His expertise and insights not only altered our perspective on sales but also empowered us to swiftly build and scale our outbound machine. I can't recommend working with him highly enough.",
+    name: "Mackenzie Daisley",
+    title: "Founder",
+    company: "Brieft",
+    featured: false
+  },
+  {
+    quote: "Zac analyzed our market and identified two key layers of opportunities, then built the outbound strategy and machinery to scale our revenue while allowing me to focus on key strategic initiatives for the business. He was worth every cent we paid.",
+    name: "James Manners",
+    title: "Founder & CEO",
+    company: "Pliny",
+    featured: false
+  }
+];
+---
+
+<Section id="testimonials" background="dark">
+  <div class="max-w-7xl mx-auto relative">
+    <!-- Ambient background glow -->
+    <div class="testimonials-ambient"></div>
+
+    <div class="text-center mb-20">
+      <p class="uppercase tracking-[0.25em] text-sm font-semibold mb-6" style="color: var(--color-accent-blue); font-family: 'DM Sans', sans-serif;">Trusted by Founders</p>
+      <h2 class="mb-6">Results that <span class="gradient-text">speak for themselves</span></h2>
+    </div>
+
+    <!-- Bento-style grid -->
+    <div class="testimonials-grid">
+      {testimonials.map((t, i) => (
+        <div
+          class={`t-card ${t.featured ? 't-card--featured' : ''}`}
+          style={`--delay: ${i * 0.1}s`}
+          data-testimonial
+        >
+          <!-- Accent border glow -->
+          <div class="t-card__glow"></div>
+
+          <div class="t-card__inner">
+            <!-- Large decorative quote watermark -->
+            <div class="t-card__watermark" aria-hidden="true">"</div>
+
+            <div class="t-card__content">
+              <p class="t-card__quote">
+                {t.quote}
+              </p>
+            </div>
+
+            <div class="t-card__attribution">
+              <div class="t-card__avatar">
+                <span>{t.name.split(' ').map(n => n[0]).join('')}</span>
+              </div>
+              <div class="t-card__meta">
+                <p class="t-card__name">{t.name}</p>
+                <p class="t-card__role">
+                  {t.title}, <span class="t-card__company">{t.company}</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</Section>
+
+<style>
+  /* Ambient glow behind the grid */
+  .testimonials-ambient {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60%;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(14, 165, 233, 0.06) 0%,
+      transparent 70%
+    );
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Bento grid layout */
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 1.25rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Featured card spans 2 columns */
+  .t-card--featured {
+    grid-column: span 2;
+  }
+
+  /* Card base */
+  .t-card {
+    position: relative;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    transition-delay: var(--delay, 0s);
+  }
+
+  .t-card.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Hover glow border effect */
+  .t-card__glow {
+    position: absolute;
+    inset: 0;
+    border-radius: 1.25rem;
+    padding: 1px;
+    background: linear-gradient(
+      135deg,
+      rgba(14, 165, 233, 0) 0%,
+      rgba(14, 165, 233, 0.3) 50%,
+      rgba(14, 165, 233, 0) 100%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  .t-card:hover .t-card__glow {
+    opacity: 1;
+  }
+
+  /* Inner card styling */
+  .t-card__inner {
+    position: relative;
+    padding: 2.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--color-dark-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 1.25rem;
+    transition: border-color 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease;
+  }
+
+  .t-card:hover .t-card__inner {
+    border-color: rgba(14, 165, 233, 0.3);
+    box-shadow: 0 20px 60px -12px rgba(14, 165, 233, 0.12);
+    transform: translateY(-3px);
+  }
+
+  /* Featured card gets elevated background */
+  .t-card--featured .t-card__inner {
+    background: linear-gradient(
+      135deg,
+      var(--color-dark-elevated) 0%,
+      var(--color-dark-surface) 100%
+    );
+  }
+
+  /* Decorative quote watermark */
+  .t-card__watermark {
+    position: absolute;
+    top: -0.2em;
+    left: 1.25rem;
+    font-size: 8rem;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-accent-blue);
+    opacity: 0.06;
+    pointer-events: none;
+    user-select: none;
+    transition: opacity 0.4s ease;
+  }
+
+  .t-card:hover .t-card__watermark {
+    opacity: 0.1;
+  }
+
+  .t-card--featured .t-card__watermark {
+    font-size: 10rem;
+  }
+
+  /* Quote text */
+  .t-card__content {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+  }
+
+  .t-card__quote {
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    color: var(--color-text-secondary);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+  }
+
+  .t-card--featured .t-card__quote {
+    font-size: 1.1875rem;
+    line-height: 1.8;
+  }
+
+  /* Attribution row */
+  .t-card__attribution {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-border);
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Avatar with ring */
+  .t-card__avatar {
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 0.02em;
+    color: var(--color-dark-bg);
+    background: var(--color-accent-blue);
+    box-shadow: 0 0 0 3px var(--color-dark-surface), 0 0 0 4px rgba(14, 165, 233, 0.25);
+    flex-shrink: 0;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .t-card:hover .t-card__avatar {
+    box-shadow: 0 0 0 3px var(--color-dark-surface), 0 0 0 5px rgba(14, 165, 233, 0.45), 0 0 20px rgba(14, 165, 233, 0.15);
+  }
+
+  .t-card__meta {
+    min-width: 0;
+  }
+
+  .t-card__name {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  .t-card__role {
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    margin: 0.125rem 0 0;
+    line-height: 1.3;
+  }
+
+  .t-card__company {
+    color: var(--color-accent-blue);
+    font-weight: 500;
+  }
+
+  /* Responsive */
+  @media (max-width: 1023px) {
+    .testimonials-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 767px) {
+    .testimonials-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .t-card--featured {
+      grid-column: span 1;
+    }
+
+    .t-card__inner {
+      padding: 2rem;
+    }
+
+    .t-card__watermark {
+      font-size: 6rem;
+    }
+
+    .t-card--featured .t-card__watermark {
+      font-size: 6rem;
+    }
+  }
+</style>
+
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+  );
+
+  document.querySelectorAll('[data-testimonial]').forEach((card) => {
+    observer.observe(card);
+  });
+</script>
