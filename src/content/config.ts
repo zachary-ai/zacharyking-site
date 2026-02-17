@@ -9,6 +9,8 @@ const blogCollection = defineCollection({
     author: z.string().default('Zachary King'),
     slug: z.string().optional(),
     image: z.string().optional(),
+    seoTitle: z.string().optional(),
+    seoDescription: z.string().optional(),
   }),
 });
 

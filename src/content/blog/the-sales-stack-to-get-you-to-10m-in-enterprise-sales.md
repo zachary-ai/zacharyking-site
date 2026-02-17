@@ -5,6 +5,8 @@ excerpt: "A sales stack is the backbone of your sales activity—the spine that 
 author: "Zachary King"
 slug: "the-sales-stack-to-get-you-to-10m-in-enterprise-sales"
 image: "https://cdn.prod.website-files.com/6530985e4f1e494933fc9b69/65cab25fe3441ea6b6488f42_sales%20stack%20to%20get%20you%20to%2010M%20revenue.png"
+seoTitle: "The Sales Stack to Get You to $10M in Revenue"
+seoDescription: "The exact sales tools you need to scale from founder-led sales to $10M in enterprise revenue. No bloat, just what actually works at each stage."
 ---
 
 Your sales stack serves as the backbone of sales activity. Like a spine supports the body, "a well-integrated sales tech stack supports your sales team, offering the structure and support needed to succeed." It's not merely random tools but rather a coordinated system orchestrating efforts from lead generation through deal closure.

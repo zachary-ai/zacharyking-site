@@ -5,6 +5,8 @@ excerpt: "The trigger for hiring senior sales and GTM leadership can be differen
 author: "Zachary King"
 slug: "when-to-hire-a-fractional-vp-sales"
 image: "https://cdn.prod.website-files.com/6530985e4f1e494933fc9b69/6530a4c7da2100aba1bb8137_3f773458-a99a-4dd4-9c2e-bbf2bab0b8de.jpeg"
+seoTitle: "When to Hire a Fractional VP Sales: 10 Signs You're Ready"
+seoDescription: "Not sure if you need a fractional VP of Sales? Here are 10 real scenarios where startups benefit from part-time sales leadership instead of a $350K full-time hire."
 ---
 
 ## The Problem

@@ -8,6 +8,18 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "/posts/:slug"
+  to = "/insights/:slug"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/posts/"
+  to = "/insights"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/_astro/*"
   [headers.values]

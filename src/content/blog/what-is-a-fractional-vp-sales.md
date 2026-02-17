@@ -5,6 +5,8 @@ excerpt: "Fractional executives are senior leaders filling part-time roles, typi
 author: "Zachary King"
 slug: "what-is-a-fractional-vp-sales"
 image: "https://cdn.prod.website-files.com/6530985e4f1e494933fc9b69/6530a51a3b1624f80f143abe_728299c8-a570-4e38-9242-61ec94a12665.jpeg"
+seoTitle: "What is a Fractional VP of Sales? (And When You Need One)"
+seoDescription: "A fractional VP of Sales is a senior sales leader who works part-time with your startup. Skip the $350K salary. Get experienced GTM leadership from day one."
 ---
 
 The fractional executive movement has expanded significantly in recent years, particularly in the post-COVID era. At its core, a fractional executive "fills a senior executive position in a part-time or short-term capacity, usually 5-25 hours per week." These professionals typically hold C-suite or VP-level positions across various functions including sales, product, marketing, and revenue operations.

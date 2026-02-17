@@ -16,8 +16,8 @@ const { Content } = await entry.render();
 ---
 
 <Layout
-  title={`${entry.data.title} - Zachary King`}
-  description={entry.data.excerpt}
+  title={entry.data.seoTitle || `${entry.data.title} - Zachary King`}
+  description={entry.data.seoDescription || entry.data.excerpt}
 >
   <Section background="dark">
     <div class="max-w-4xl mx-auto">

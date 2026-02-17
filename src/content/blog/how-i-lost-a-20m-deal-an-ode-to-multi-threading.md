@@ -5,6 +5,8 @@ excerpt: "Working at Mediamath as an underdog competing against Google and Faceb
 author: "Zachary King"
 slug: "how-i-lost-a-20m-deal-an-ode-to-multi-threading"
 image: "https://cdn.prod.website-files.com/6530985e4f1e494933fc9b69/65efd4d46714b7ea63f2de25_air%20cover%202.jpeg"
+seoTitle: "How I Lost a $20M Deal: A Lesson in Multi-Threading"
+seoDescription: "We beat Google and Facebook for a $100M deal, then lost $20M because we talked to one person. The multi-threading mistake every B2B sales team makes."
 ---
 
 In Zachary King's account of his experience at Mediamath, he describes working for an independent adtech company competing against dominant players. The firm pursued a custom solutions strategy and identified a major FMCG corporation with significant programmatic spending in the Asia-Pacific region as a prospect.

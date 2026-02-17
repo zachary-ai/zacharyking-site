@@ -5,6 +5,8 @@ excerpt: "Traditional sales playbooks gather dust. Modern GTM teams need AI-powe
 author: "Zachary King"
 slug: "your-sales-playbook-needs-ai-infrastructure"
 image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=630&fit=crop"
+seoTitle: "Your Sales Playbook Needs AI Infrastructure, Not a Google Doc"
+seoDescription: "Sales playbooks die in Google Docs. Here's how to build AI-powered sales infrastructure that learns from every deal and scales with your team."
 ---
 
 ## The Problem with Traditional Playbooks

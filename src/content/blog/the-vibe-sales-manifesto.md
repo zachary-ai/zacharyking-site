@@ -5,6 +5,8 @@ excerpt: "Sales methodology is evolving toward 'vibe sales' where AI tools enabl
 author: "Zachary King"
 slug: "the-vibe-sales-manifesto"
 image: "https://cdn.prod.website-files.com/6530985e4f1e494933fc9b69/6838ff1a33a5b8784b1fcb2d_vibe%20sales%20landscape.jpg"
+seoTitle: "The Vibe Sales Manifesto: Stop Micromanaging, Start Closing"
+seoDescription: "Vibe coding changed software. Now vibe sales is changing how deals close. Stop micromanaging every interaction and let AI find the patterns that matter."
 ---
 
 ## Feel the Deal. Don't Force It.
