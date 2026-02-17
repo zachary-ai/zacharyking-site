@@ -1,0 +1,99 @@
+# Zachary King - Fractional GTM Leader
+
+> Zachary King builds AI-powered GTM (go-to-market) infrastructure for B2B startups. Based in Melbourne, Australia. 20+ years in B2B sales, from $25M enterprise deals to building AI-powered revenue systems for early-stage companies.
+
+## About
+
+Zachary King is a fractional GTM leader who helps founders move from founder-led sales to scalable, AI-enabled revenue engines, without hiring a full-time VP Sales too early. He operates through Fractional Enterprises Pty Ltd.
+
+He is not a traditional sales consultant. He embeds as a GTM leader inside startups, builds working infrastructure (playbooks, AI agents, outbound systems), and hands it all off when the engagement ends. Everything stays with the client.
+
+## GTM Swarm
+
+GTM Swarm is Zachary's core methodology. Strategy becomes a playbook, the playbook becomes AI agents, and the agents become systems that scale without hiring.
+
+Six specialized AI agents are deployed in a client's own AI platform (Claude, Microsoft Copilot, or other enterprise tools):
+
+- Prospecting Agent: ICP-matched company research, decision-maker identification, personalized outbound drafting
+- Discovery Agent: Pre-call research, qualification criteria, tech stack analysis
+- Demo Agent: Value prop mapping, pain-to-feature alignment, real-time ROI building
+- Objection Agent: Proven reframes, competitive differentiation, objection-to-signal conversion
+- Deal Strategy Agent: Buying committee mapping, blocker identification, multi-threading
+- RevOps Agent: CRM automation, data-driven forecasting, pipeline risk detection
+
+All agents are trained on the client's specific playbook and deployed in their own systems. The infrastructure keeps working after the engagement ends.
+
+## Services
+
+### GTM Diagnostic ($1,950)
+One-week GTM audit. Identifies what is broken, delivers a prioritized 90-day roadmap, and seeds the first outbound campaign (300+ prospects). Fast, focused diagnosis.
+URL: https://zacharyking.com.au/services/
+
+### GTM Swarm Sprint ($30,000)
+90-day full deployment. Complete sales playbook, six AI agents deployed, outbound engine with live campaigns (600+ prospects contacted), weekly sales rhythm established, and AI automation saving 8-12 hours per client. Everything stays with the client.
+URL: https://zacharyking.com.au/services/
+
+### Fractional GTM ($9,000/month)
+Embedded GTM leadership. Works inside the client's CRM, tools, and team. Builds AI-powered workflows, runs active deals, coaches the team, and provides weekly sales meetings plus async support. Flexible engagement, cancel anytime.
+URL: https://zacharyking.com.au/services/
+
+### Swarm Subscription ($1,500/month)
+Post-engagement support. Keeps AI agents online and updated, provides quarterly updates, async support, and continuous access to new automation skills. No lock-in.
+URL: https://zacharyking.com.au/services/
+
+## Ideal Clients
+
+- B2B SaaS, AI, or workflow platform companies
+- Pre-seed to Series A/B stage, or $1-10M annual revenue
+- 5-30 employees
+- Founder-led or early-stage sales motion
+- Post-funding trigger moment (just raised, need to deploy capital efficiently)
+- Product-obsessed founders who want sales without killing the founder vibe
+
+## 4-Step Process
+
+1. Diagnose: Audit current GTM, identify what is broken, prioritize fixes
+2. Build: Create sales playbook, deploy AI infrastructure on the client's platform
+3. Train: Enable the team through live sessions and real deal support
+4. Scale: Client keeps everything. System continues working independently.
+
+URL: https://zacharyking.com.au/how-it-works/
+
+## Site Pages
+
+- Home: https://zacharyking.com.au/
+- About: https://zacharyking.com.au/about/
+- Services: https://zacharyking.com.au/services/
+- How It Works: https://zacharyking.com.au/how-it-works/
+- FAQ: https://zacharyking.com.au/faq/
+- Insights (Blog): https://zacharyking.com.au/insights/
+- Contact: https://zacharyking.com.au/contact/
+
+## Key Insights (Blog Posts)
+
+- Your Sales Playbook Needs AI Infrastructure, Not Another Google Doc: https://zacharyking.com.au/insights/your-sales-playbook-needs-ai-infrastructure/
+- The Vibe Sales Manifesto: https://zacharyking.com.au/insights/the-vibe-sales-manifesto/
+- What is a Fractional VP Sales?: https://zacharyking.com.au/insights/what-is-a-fractional-vp-sales/
+- When to Hire a Fractional VP Sales or GTM Leader?: https://zacharyking.com.au/insights/when-to-hire-a-fractional-vp-sales/
+- The Sales Stack to Get You to $10M in Enterprise Sales: https://zacharyking.com.au/insights/the-sales-stack-to-get-you-to-10m-in-enterprise-sales/
+- How I Lost a $20M Deal, An Ode to Multi-Threading: https://zacharyking.com.au/insights/how-i-lost-a-20m-deal-an-ode-to-multi-threading/
+- The Sales Valley Of Death: https://zacharyking.com.au/insights/the-sales-valley-of-death/
+- The New Yardstick, Value Creation Over Hours Worked: https://zacharyking.com.au/insights/the-new-yardstick-value-creation-over-hours-worked/
+- The Results-Driven Approach, Why Fractional Executives Surpass Consultants: https://zacharyking.com.au/insights/the-results-driven-approach-why-fractional-executives-surpass-consultants/
+- $21k of Free Strategic Sales Advice: https://zacharyking.com.au/insights/21k-of-free-strategic-sales-advice/
+- Value Proposition, The One Ring That Binds Them: https://zacharyking.com.au/insights/value-proposition-the-one-ring-that-binds-them/
+- Don't Leave Your Clients Hanging, The Power of Structured Engagement: https://zacharyking.com.au/insights/dont-leave-your-clients-hanging-the-power-of-structured-engagement/
+- Why Founders Must Always Lead the First Sales: https://zacharyking.com.au/insights/why-founders-must-always-lead-the-first-sales/
+- Maximizing Remote Work, Insights from a Fractional VP of Sales: https://zacharyking.com.au/insights/maximizing-remote-work-insights-from-a-fractional-vp-of-sales/
+
+## Other Projects
+
+- The Fractional Exec (https://thefractionalexec.com.au): Paid community for fractional executives. Includes newsletter, podcast (Fractionalism), workshops, and resources for experienced operators transitioning to or running fractional practices.
+
+## Contact
+
+- Website: https://zacharyking.com.au
+- Book a call: https://savvycal.com/Zachary-King/b18fb593
+- LinkedIn: https://www.linkedin.com/in/zacharyking/
+- Location: Melbourne, Australia
+- Company: Fractional Enterprises Pty Ltd

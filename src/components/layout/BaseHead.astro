@@ -41,6 +41,168 @@ const { title, description, image = '/images/tif-presenting.jpg' } = Astro.props
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
 
+<!-- LLMs.txt discovery -->
+<link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Information" />
+
+<!-- Schema.org JSON-LD Structured Data -->
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://zacharyking.com.au/#person",
+      "name": "Zachary King",
+      "jobTitle": "Fractional GTM Leader",
+      "description": "Fractional GTM leader building AI-powered revenue systems for B2B startups. 20+ years in B2B sales, from $25M enterprise deals to AI-powered GTM infrastructure.",
+      "url": "https://zacharyking.com.au/",
+      "image": "https://zacharyking.com.au/images/tif-presenting.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/in/zacharyking/",
+        "https://twitter.com/superzac",
+        "https://thefractionalexec.com.au"
+      ],
+      "worksFor": {
+        "@id": "https://zacharyking.com.au/#organization"
+      },
+      "knowsAbout": [
+        "Go-to-Market Strategy",
+        "AI-Powered Sales Infrastructure",
+        "B2B SaaS Sales",
+        "Fractional Leadership",
+        "Sales Playbook Development",
+        "Outbound Sales Automation",
+        "CRM Automation",
+        "Enterprise Sales"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Melbourne",
+        "addressCountry": "AU"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://zacharyking.com.au/#organization",
+      "name": "Fractional Enterprises Pty Ltd",
+      "url": "https://zacharyking.com.au/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://zacharyking.com.au/favicon.svg"
+      },
+      "description": "AI-powered GTM infrastructure for B2B startups. Fractional GTM leadership, sales playbooks, and AI agent deployment.",
+      "founder": {
+        "@id": "https://zacharyking.com.au/#person"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/zacharyking/",
+        "https://twitter.com/superzac",
+        "https://thefractionalexec.com.au"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Melbourne",
+        "addressCountry": "AU"
+      }
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://zacharyking.com.au/#service",
+      "name": "GTM Swarm - Zachary King",
+      "url": "https://zacharyking.com.au/",
+      "description": "AI-powered GTM infrastructure for B2B startups. Strategy becomes playbook, playbook becomes AI agents, systems that scale without hiring.",
+      "provider": {
+        "@id": "https://zacharyking.com.au/#organization"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Australia"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Global (Remote)"
+        }
+      ],
+      "serviceType": [
+        "Fractional GTM Leadership",
+        "AI Sales Infrastructure",
+        "Sales Playbook Development",
+        "GTM Diagnostic",
+        "AI Agent Deployment"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "GTM Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "GTM Diagnostic",
+              "description": "1-week GTM audit with prioritized 90-day roadmap and first outbound campaign seeded with 300+ prospects."
+            },
+            "price": "1950",
+            "priceCurrency": "AUD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "GTM Swarm Sprint",
+              "description": "90-day full deployment. Complete sales playbook, six AI agents, outbound engine with 600+ prospects contacted, and AI automation saving 8-12 hours per client."
+            },
+            "price": "30000",
+            "priceCurrency": "AUD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Fractional GTM",
+              "description": "Embedded GTM leadership with AI-powered workflows, active deal support, team coaching, and weekly sales meetings."
+            },
+            "price": "9000",
+            "priceCurrency": "AUD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "9000",
+              "priceCurrency": "AUD",
+              "unitText": "MONTH"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Swarm Subscription",
+              "description": "Ongoing AI agent updates, quarterly feature releases, async support, and access to new automation skills."
+            },
+            "price": "1500",
+            "priceCurrency": "AUD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "1500",
+              "priceCurrency": "AUD",
+              "unitText": "MONTH"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://zacharyking.com.au/#website",
+      "name": "GTM Swarm - Zachary King",
+      "url": "https://zacharyking.com.au/",
+      "description": "AI-powered GTM infrastructure for B2B startups. Fractional GTM leadership, sales playbooks, and AI agent deployment.",
+      "publisher": {
+        "@id": "https://zacharyking.com.au/#organization"
+      },
+      "inLanguage": "en-AU"
+    }
+  ]
+})} />
+
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
