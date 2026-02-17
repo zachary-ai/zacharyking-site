@@ -6,12 +6,12 @@ author: "Zachary King"
 slug: "when-to-hire-a-fractional-vp-sales"
 image: "https://cdn.prod.website-files.com/6530985e4f1e494933fc9b69/6530a4c7da2100aba1bb8137_3f773458-a99a-4dd4-9c2e-bbf2bab0b8de.jpeg"
 seoTitle: "When to Hire a Fractional VP Sales: 10 Signs You're Ready"
-seoDescription: "Not sure if you need a fractional VP of Sales? Here are 10 real scenarios where startups benefit from part-time sales leadership instead of a $350K full-time hire."
+seoDescription: "Not sure if you need a fractional VP of Sales? Here are 10 real scenarios where startups benefit from part-time sales leadership."
 ---
 
 ## The Problem
 
-If you're new to the concept, start with [what a fractional VP of Sales actually is](/insights/what-is-a-fractional-vp-sales). Below are ten reasons companies should consider hiring fractional sales and GTM leadership:
+If you're new to the concept, start with [what a fractional VP of Sales actually is](/insights/what-is-a-fractional-vp-sales/). Below are ten reasons companies should consider hiring fractional sales and GTM leadership:
 
 **Cost and Experience Gap**: "You need sales and GTM experience but just found out how much full-time tech salespeople get paid." This addresses the financial reality of hiring experienced talent.
 
@@ -37,4 +37,4 @@ If you're new to the concept, start with [what a fractional VP of Sales actually
 
 Fractional GTM and sales leadership addresses these challenges through a flexible, cost-effective, and immediately impactful engagement model.
 
-Many of these scenarios overlap with what I call [the Sales Valley of Death](/insights/the-sales-valley-of-death), the dangerous gap between founder-led sales and a scalable revenue engine. If you're a founder still running sales yourself, that's often the right move early on. Here's [why founders must always lead the first sales](/insights/why-founders-must-always-lead-the-first-sales).
+Many of these scenarios overlap with what I call [the Sales Valley of Death](/insights/the-sales-valley-of-death/), the dangerous gap between founder-led sales and a scalable revenue engine. If you're a founder still running sales yourself, that's often the right move early on. Here's [why founders must always lead the first sales](/insights/why-founders-must-always-lead-the-first-sales/).

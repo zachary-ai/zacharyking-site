@@ -19,6 +19,6 @@ King identifies the critical failure: the team neglected to build relationships 
 
 The core lesson King extracts centers on "multi-threading"—establishing relationships across the entire decision-making committee rather than relying on a single champion. He recommends three steps: identify all stakeholders and their priorities, actively involve them in the process, and maintain consistent communication.
 
-Multi-threading is just one piece of the puzzle. Structured engagement with all stakeholders matters just as much after the deal closes. Read more about [why you should never leave your clients hanging](/insights/dont-leave-your-clients-hanging-the-power-of-structured-engagement).
+Multi-threading is just one piece of the puzzle. Structured engagement with all stakeholders matters just as much after the deal closes. Read more about [why you should never leave your clients hanging](/insights/dont-leave-your-clients-hanging-the-power-of-structured-engagement/).
 
-If you're building an enterprise sales motion and want to avoid mistakes like this, a [fractional VP of Sales](/insights/what-is-a-fractional-vp-sales) can bring the experience to navigate complex deals from day one.
+If you're building an enterprise sales motion and want to avoid mistakes like this, a [fractional VP of Sales](/insights/what-is-a-fractional-vp-sales/) can bring the experience to navigate complex deals from day one.

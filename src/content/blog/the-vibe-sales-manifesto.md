@@ -41,7 +41,7 @@ Those clinging to outdated approaches aren't just leaving money on the table –
 
 **Conversations Are Data** Every "checking in" reply. Every ghosted thread. Every pricing objection. It's all signal. Vibe Sales sees it, scores it, and feeds it back. Often, the most powerful signals aren't what conventional wisdom suggests.
 
-**Static Playbooks Are Overrated** Real sales is messy. Context-heavy. Nonlinear. Vibe Sales isn't about perfect execution, it's about "it mostly works." When you hit errors or roadblocks, don't panic. Like Karpathy dealing with code bugs, sometimes you just "ask for random changes until it goes away." Try different approaches, adjust your messaging, change your targeting. This is exactly why [your sales playbook needs AI infrastructure](/insights/your-sales-playbook-needs-ai-infrastructure), not another static Google Doc.
+**Static Playbooks Are Overrated** Real sales is messy. Context-heavy. Nonlinear. Vibe Sales isn't about perfect execution, it's about "it mostly works." When you hit errors or roadblocks, don't panic. Like Karpathy dealing with code bugs, sometimes you just "ask for random changes until it goes away." Try different approaches, adjust your messaging, change your targeting. This is exactly why [your sales playbook needs AI infrastructure](/insights/your-sales-playbook-needs-ai-infrastructure/), not another static Google Doc.
 
 **Forecast from Feel** Gut instinct, meet machine precision. Vibe Sales builds momentum models: Who's responding, who's escalating, who's bringing in their CFO. It doesn't guess. It senses.
 
@@ -51,7 +51,7 @@ Those clinging to outdated approaches aren't just leaving money on the table –
 
 **Data Preparation** Start by gathering everything – email archives, call recordings, chat logs, CRM data, won/lost analyses. Don't filter; more data means better patterns.
 
-**Tool Selection** Your Vibe Sales Stack (for a deeper dive, see [the sales stack to get you to $10M](/insights/the-sales-stack-to-get-you-to-10m-in-enterprise-sales)):
+**Tool Selection** Your Vibe Sales Stack (for a deeper dive, see [the sales stack to get you to $10M](/insights/the-sales-stack-to-get-you-to-10m-in-enterprise-sales/)):
 
 - LLM API: Claude, GPT-4, Gemini
 - Pipeline Layer: Zapier, Make, or custom
@@ -203,4 +203,4 @@ If you answered "yes" to #1 or "no" to any others, it's time to embrace vibe sal
 
 The future of sales isn't about working harder. It's about working smarter—and letting AI amplify your instincts.
 
-Ready to build an AI-native sales motion? [Let's talk](/contact).
+Ready to build an AI-native sales motion? [Let's talk](/contact/).

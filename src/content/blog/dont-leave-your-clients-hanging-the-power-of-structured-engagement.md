@@ -4,6 +4,8 @@ date: "2024-03-28"
 excerpt: "Amid fundraising and product development pressures, nurturing existing clients shouldn't be neglected. Here's why regular check-ins and QBRs matter."
 author: "Zachary King"
 slug: "dont-leave-your-clients-hanging-the-power-of-structured-engagement"
+seoTitle: "Don't Leave Clients Hanging: Why Structured QBRs Drive Retention"
+seoDescription: "Regular check-ins and QBRs prevent churn, uncover upsell opportunities, and strengthen retention. Why structured client engagement matters."
 ---
 
 Early-stage founders: amid fundraising and product development pressures, nurturing existing clients shouldn't be neglected.
@@ -13,7 +15,7 @@ Regular check-ins and Quarterly Business Reviews (QBRs) serve strategic purposes
 ## Five Key Benefits
 
 ### 1. Consistent Communication
-Regular touchpoints build trust and demonstrate genuine interest in client success. This is especially critical in enterprise sales where [multi-threading across stakeholders](/insights/how-i-lost-a-20m-deal-an-ode-to-multi-threading) can make or break a deal.
+Regular touchpoints build trust and demonstrate genuine interest in client success. This is especially critical in enterprise sales where [multi-threading across stakeholders](/insights/how-i-lost-a-20m-deal-an-ode-to-multi-threading/) can make or break a deal.
 
 ### 2. Proactive Issue Management
 Early identification of concerns prevents escalation into major problems.
@@ -37,7 +39,7 @@ Retention > acquisition. Always.
 
 ## The Fractional Solution
 
-The [Fractional VP of Sales](/insights/what-is-a-fractional-vp-sales) model offers a resource-efficient approach.
+The [Fractional VP of Sales](/insights/what-is-a-fractional-vp-sales/) model offers a resource-efficient approach.
 
 You get someone who can:
 - Establish systematic client engagement
@@ -49,4 +51,4 @@ Without overwhelming your internal team or budget.
 
 ---
 
-Need help building a structured client engagement system? [Let's talk](/contact).
+Need help building a structured client engagement system? [Let's talk](/contact/).

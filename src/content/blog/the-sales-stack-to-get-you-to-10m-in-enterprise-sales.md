@@ -50,4 +50,4 @@ Audiopen transforms voice notes into coherent written content ($75 annually for 
 
 Effective sales stacks maximize processes and productivity across six specific areas. Success depends on aligning tools with existing team workflows rather than forcing adoption of predetermined solutions.
 
-Once your stack is in place, the next step is turning it into [AI-powered infrastructure](/insights/your-sales-playbook-needs-ai-infrastructure) that learns from every deal. And if you're evaluating whether you need a senior leader to architect all of this, read [what a fractional VP of Sales actually does](/insights/what-is-a-fractional-vp-sales).
+Once your stack is in place, the next step is turning it into [AI-powered infrastructure](/insights/your-sales-playbook-needs-ai-infrastructure/) that learns from every deal. And if you're evaluating whether you need a senior leader to architect all of this, read [what a fractional VP of Sales actually does](/insights/what-is-a-fractional-vp-sales/).

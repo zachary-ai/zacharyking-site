@@ -115,7 +115,7 @@ The training process involves:
 3. **Incorporating ICP knowledge**: exact buyer personas, company profiles, decision-maker titles
 4. **Building in your voice**: how your team talks, your unique value prop, your positioning against competitors
 
-This isn't prompt engineering. This is building an operating system trained on how *your business* actually sells. It's the infrastructure layer behind what I call [vibe sales](/insights/the-vibe-sales-manifesto), where AI finds the patterns that matter so your team can focus on closing.
+This isn't prompt engineering. This is building an operating system trained on how *your business* actually sells. It's the infrastructure layer behind what I call [vibe sales](/insights/the-vibe-sales-manifesto/), where AI finds the patterns that matter so your team can focus on closing.
 
 ### Step 4: Deploy AI Where the Work Happens
 
@@ -218,7 +218,7 @@ If you're ready to turn your playbook into AI infrastructure, here's where to be
 
 **Week 2: Identify Your First Agent**
 - Pick the highest-impact, lowest-complexity use case
-- Common starting points: prospecting scoring, objection handling, or CRM automation (see [the sales stack to get you to $10M](/insights/the-sales-stack-to-get-you-to-10m-in-enterprise-sales) for tool recommendations)
+- Common starting points: prospecting scoring, objection handling, or CRM automation (see [the sales stack to get you to $10M](/insights/the-sales-stack-to-get-you-to-10m-in-enterprise-sales/) for tool recommendations)
 - Don't try to boil the ocean. Start with one agent
 
 **Week 3: Build and Train**
@@ -248,6 +248,6 @@ The choice is simple: evolve or get left behind.
 
 If you're a founder or GTM leader who wants to turn your playbook into AI infrastructure, I can help.
 
-I work with B2B companies as a [fractional VP of Sales](/insights/what-is-a-fractional-vp-sales) to design and deploy AI-powered GTM systems. Embedded, hands-on. No fluff. No theories. Just systems that work.
+I work with B2B companies as a [fractional VP of Sales](/insights/what-is-a-fractional-vp-sales/) to design and deploy AI-powered GTM systems. Embedded, hands-on. No fluff. No theories. Just systems that work.
 
-**[Book a call](/contact)** and let's talk about building your AI-native GTM engine.
+**[Book a call](/contact/)** and let's talk about building your AI-native GTM engine.

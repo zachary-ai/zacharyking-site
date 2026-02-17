@@ -13,8 +13,8 @@ import CTA from '../components/home/CTA.astro';
 ---
 
 <Layout
-  title="Zachary King | Fractional VP Sales & AI-Powered GTM for Startups"
-  description="Fractional VP of Sales for B2B startups. I build AI-powered GTM infrastructure that keeps working after I leave. From founder-led chaos to repeatable pipeline in 90 days."
+  title="Zachary King | Fractional VP Sales & AI-Powered GTM"
+  description="Fractional VP of Sales for B2B startups. I build AI-powered GTM infrastructure that keeps working after I leave. Repeatable pipeline in 90 days."
 >
   <!-- Schema.org structured data for SEO -->
   <script type="application/ld+json" set:html={JSON.stringify({
@@ -22,8 +22,11 @@ import CTA from '../components/home/CTA.astro';
     "@type": "ProfessionalService",
     "name": "GTM Swarm - Zachary King",
     "alternateName": "Zachary King Fractional GTM",
-    "url": "https://zacharyking.com.au",
-    "logo": "https://zacharyking.com.au/favicon.svg",
+    "url": "https://zacharyking.com.au/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://zacharyking.com.au/favicon.svg"
+    },
     "description": "AI-powered GTM infrastructure for startups. Build sales systems that keep working after I leave.",
     "areaServed": {
       "@type": "Country",

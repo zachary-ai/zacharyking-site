@@ -4,6 +4,8 @@ date: "2024-03-25"
 excerpt: "Professional worth should be measured by value creation, not hours worked. Here's the formula that matters in the post-COVID era."
 author: "Zachary King"
 slug: "the-new-yardstick-value-creation-over-hours-worked"
+seoTitle: "Value Creation Over Hours Worked: The New Yardstick"
+seoDescription: "Stop measuring work by hours logged. The real yardstick is value created. Here's the formula that matters for fractional executives and modern professionals."
 image: "https://cdn.prod.website-files.com/6530985e4f1e494933fc9b69/6530a408e7a9be2cfd0c1b9d_5.png"
 ---
 
@@ -29,6 +31,6 @@ This perspective becomes even more poignant when considering entrepreneurship an
 
 This is the ultimate goal: decoupling income from personal effort. When you can create a product, service, or system that continues to generate value—and income—irrespective of the hours you put in, you've achieved something truly remarkable.
 
-This is where the role of a Fractional Executive, such as a [Fractional VP of Sales](/insights/what-is-a-fractional-vp-sales), becomes pivotal. A Fractional Executive challenges the traditional formula by leveraging a minimal amount of time to yield maximum value. With years of experience under their belt, a Fractional Exec's efficiency quotient is significantly higher than that of a less experienced worker. This wealth of experience enables them to handle situations in the most efficient manner possible, usually because they've already explored various alternative approaches in the past.
+This is where the role of a Fractional Executive, such as a [Fractional VP of Sales](/insights/what-is-a-fractional-vp-sales/), becomes pivotal. A Fractional Executive challenges the traditional formula by leveraging a minimal amount of time to yield maximum value. With years of experience under their belt, a Fractional Exec's efficiency quotient is significantly higher than that of a less experienced worker. This wealth of experience enables them to handle situations in the most efficient manner possible, usually because they've already explored various alternative approaches in the past.
 
-If you're looking to truly maximise your value output, consider harnessing the power of a Fractional Executive. This is also why [fractional executives surpass traditional consultants](/insights/the-results-driven-approach-why-fractional-executives-surpass-consultants), they're measured on outcomes, not deliverables. After all, it's value, not hours, that is the real measure of work.
+If you're looking to truly maximise your value output, consider harnessing the power of a Fractional Executive. This is also why [fractional executives surpass traditional consultants](/insights/the-results-driven-approach-why-fractional-executives-surpass-consultants/), they're measured on outcomes, not deliverables. After all, it's value, not hours, that is the real measure of work.

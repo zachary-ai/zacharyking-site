@@ -4,10 +4,12 @@ date: "2024-03-10"
 excerpt: "I've integrated into 15+ fully remote companies over two years as a fractional VP of Sales. Here are the golden rules that actually work for remote teams."
 author: "Zachary King"
 slug: "maximizing-remote-work-insights-from-a-fractional-vp-of-sales"
+seoTitle: "Remote Work Done Right: Lessons from 15+ Distributed Sales Teams"
+seoDescription: "Golden rules for remote work from a fractional VP of Sales who integrated into 15+ fully remote companies. Async-first, documentation, and more."
 image: "https://cdn.prod.website-files.com/6530985e4f1e494933fc9b69/65d29767eda2f7366169ce73_Remote%20Work%20Culture%20from%20a%20Fractional%20Exec.webp"
 ---
 
-As a [fractional VP of Sales](/insights/what-is-a-fractional-vp-sales), I have engaged with 15+ companies in the last two years, all operating fully remote. The transition to remote leadership requires rapid integration into existing teams and leadership structures. This experience has revealed both successful and challenging aspects of distributed work environments.
+As a [fractional VP of Sales](/insights/what-is-a-fractional-vp-sales/), I have engaged with 15+ companies in the last two years, all operating fully remote. The transition to remote leadership requires rapid integration into existing teams and leadership structures. This experience has revealed both successful and challenging aspects of distributed work environments.
 
 ## The Golden Rules of Nailing Remote Work
 
@@ -33,4 +35,4 @@ In-person gatherings, whether strategic offsites or informal meetups, strengthen
 
 ## Wrapping Up: The Remote Work Journey
 
-The right organizational culture significantly impacts remote work effectiveness, creating meaningful benefits for all involved. Remote work also shifts how we measure professional worth, from hours logged to [value creation](/insights/the-new-yardstick-value-creation-over-hours-worked).
+The right organizational culture significantly impacts remote work effectiveness, creating meaningful benefits for all involved. Remote work also shifts how we measure professional worth, from hours logged to [value creation](/insights/the-new-yardstick-value-creation-over-hours-worked/).
