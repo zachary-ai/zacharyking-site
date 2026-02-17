@@ -7,7 +7,7 @@ slug: "value-proposition-the-one-ring-that-binds-them"
 image: "https://cdn.prod.website-files.com/6530985e4f1e494933fc9b69/65dd2523b9ea5c290271c777_Value%20Proposition-%20the%20one%20ring%20to%20bind%20them.jpeg"
 ---
 
-Almost every company Zachary King worked with as a Fractional VP Sales has struggled to express their Value Proposition clearly and succinctly. It's an area that seems to need work with almost everyone, yet it's a fundamental and crucial piece of your go-to-market. It forms the basis of your sales, your comms, your elevator pitch and reflects in almost every facet of the business. It is in fact, the 'One Ring' that binds together all of these elements.
+Almost every company I've worked with as a [Fractional VP of Sales](/insights/what-is-a-fractional-vp-sales) has struggled to express their Value Proposition clearly and succinctly. It's an area that seems to need work with almost everyone, yet it's a fundamental and crucial piece of your go-to-market. It forms the basis of your sales, your comms, your elevator pitch and reflects in almost every facet of the business. It is in fact, the 'One Ring' that binds together all of these elements.
 
 ## The Essence of Your Value Prop
 
@@ -31,4 +31,4 @@ Perhaps most importantly, everyone within your organization should deeply unders
 
 ## Journey's End: Wielding Your Value Prop
 
-Forging a compelling Value Proposition is not just about finding the right words; it's about uncovering the true essence of the value your company provides. Wielding your Value Proposition isn't a quest for the faint-hearted. It's about delving into the very depths of your market armed with the 'One Ring' that binds all facets of your business. So, wield your Value Proposition wisely. And try not to drop it into a volcano.
+Forging a compelling Value Proposition is not just about finding the right words; it's about uncovering the true essence of the value your company provides. Your value prop is item #1 in the [complete GTM blueprint](/insights/21k-of-free-strategic-sales-advice) I give every client. Wielding your Value Proposition isn't a quest for the faint-hearted. It's about delving into the very depths of your market armed with the 'One Ring' that binds all facets of your business. So, wield your Value Proposition wisely. And try not to drop it into a volcano.

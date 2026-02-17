@@ -11,7 +11,7 @@ seoDescription: "Not sure if you need a fractional VP of Sales? Here are 10 real
 
 ## The Problem
 
-The article outlines ten reasons companies should consider hiring fractional sales and GTM leadership:
+If you're new to the concept, start with [what a fractional VP of Sales actually is](/insights/what-is-a-fractional-vp-sales). Below are ten reasons companies should consider hiring fractional sales and GTM leadership:
 
 **Cost and Experience Gap**: "You need sales and GTM experience but just found out how much full-time tech salespeople get paid." This addresses the financial reality of hiring experienced talent.
 
@@ -35,4 +35,6 @@ The article outlines ten reasons companies should consider hiring fractional sal
 
 ## The Solution
 
-The article concludes by suggesting fractional GTM and sales leadership addresses these challenges through a flexible, cost-effective, and immediately impactful engagement model.
+Fractional GTM and sales leadership addresses these challenges through a flexible, cost-effective, and immediately impactful engagement model.
+
+Many of these scenarios overlap with what I call [the Sales Valley of Death](/insights/the-sales-valley-of-death), the dangerous gap between founder-led sales and a scalable revenue engine. If you're a founder still running sales yourself, that's often the right move early on. Here's [why founders must always lead the first sales](/insights/why-founders-must-always-lead-the-first-sales).

@@ -7,7 +7,7 @@ slug: "maximizing-remote-work-insights-from-a-fractional-vp-of-sales"
 image: "https://cdn.prod.website-files.com/6530985e4f1e494933fc9b69/65d29767eda2f7366169ce73_Remote%20Work%20Culture%20from%20a%20Fractional%20Exec.webp"
 ---
 
-As a fractional VP of Sales, I have engaged with 15+ companies in the last two years, all operating fully remote. The transition to remote leadership requires rapid integration into existing teams and leadership structures. This experience has revealed both successful and challenging aspects of distributed work environments.
+As a [fractional VP of Sales](/insights/what-is-a-fractional-vp-sales), I have engaged with 15+ companies in the last two years, all operating fully remote. The transition to remote leadership requires rapid integration into existing teams and leadership structures. This experience has revealed both successful and challenging aspects of distributed work environments.
 
 ## The Golden Rules of Nailing Remote Work
 
@@ -33,4 +33,4 @@ In-person gatherings, whether strategic offsites or informal meetups, strengthen
 
 ## Wrapping Up: The Remote Work Journey
 
-The right organizational culture significantly impacts remote work effectiveness, creating meaningful benefits for all involved.
+The right organizational culture significantly impacts remote work effectiveness, creating meaningful benefits for all involved. Remote work also shifts how we measure professional worth, from hours logged to [value creation](/insights/the-new-yardstick-value-creation-over-hours-worked).

@@ -15,8 +15,8 @@ The milestone of hiring a VP of Sales feels like an inflection point, yet challe
 
 This juncture represents the **Sales Valley of Death**, where many startups struggle. "Client acquisition slows down, churn increases and it can get ugly." Startups face compounding pressures: cash management, fundraising, product-market fit, operational scaling, and competitive threats simultaneously.
 
-A Fractional VP of Sales can provide critical support during this phase. Success requires building repeatable, scalable processes. Breaking sales into distinct stages enables performance measurement and strategy refinement.
+A [Fractional VP of Sales](/insights/what-is-a-fractional-vp-sales) can provide critical support during this phase. Not sure if you're at that point yet? Here are [10 signs it's time to hire one](/insights/when-to-hire-a-fractional-vp-sales). Success requires building repeatable, scalable processes. Breaking sales into distinct stages enables performance measurement and strategy refinement.
 
 "A well-defined sales process provides the framework for consistency, customer focus and adaptability." Understanding how customers move through your funnel allows customized engagement at each touchpoint, improving efficiency.
 
-If your startup shows sales momentum and readiness for significant growth, exploring scalable sales strategies offers meaningful advantages.
+If your startup shows sales momentum and readiness for significant growth, exploring scalable sales strategies offers meaningful advantages. But remember: [founders must always lead the first sales](/insights/why-founders-must-always-lead-the-first-sales) before making this transition.

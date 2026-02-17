@@ -13,7 +13,7 @@ Regular check-ins and Quarterly Business Reviews (QBRs) serve strategic purposes
 ## Five Key Benefits
 
 ### 1. Consistent Communication
-Regular touchpoints build trust and demonstrate genuine interest in client success.
+Regular touchpoints build trust and demonstrate genuine interest in client success. This is especially critical in enterprise sales where [multi-threading across stakeholders](/insights/how-i-lost-a-20m-deal-an-ode-to-multi-threading) can make or break a deal.
 
 ### 2. Proactive Issue Management
 Early identification of concerns prevents escalation into major problems.
@@ -37,7 +37,7 @@ Retention > acquisition. Always.
 
 ## The Fractional Solution
 
-The Fractional VP of Sales model offers a resource-efficient approach.
+The [Fractional VP of Sales](/insights/what-is-a-fractional-vp-sales) model offers a resource-efficient approach.
 
 You get someone who can:
 - Establish systematic client engagement

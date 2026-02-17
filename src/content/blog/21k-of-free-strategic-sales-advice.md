@@ -15,7 +15,7 @@ OK, OK just kidding.
 
 Here is the GTM blueprint. 100% Free:
 
-1. **Value Proposition**: articulates the unique benefits your product or service provides, how it solves customers' problems or improves their situation. The more specific your value proposition is, the better. This is _the_ fundamental piece that everything else is built upon.
+1. **Value Proposition**: articulates the unique benefits your product or service provides, how it solves customers' problems or improves their situation. The more specific your value proposition is, the better. This is _the_ fundamental piece that everything else is built upon. I wrote a deeper dive on this: [Value Proposition: The One Ring That Binds Them](/insights/value-proposition-the-one-ring-that-binds-them).
 
 2. **Ideal Customer Profile**: the characteristics of the customer who would get the most value out of your product. This profile guides your sales and marketing efforts, enabling you to target and engage the right people. While many claim to have an ICP in reality it's often not well-defined.
 
@@ -29,10 +29,10 @@ Here is the GTM blueprint. 100% Free:
 
 7. **Sales Data Tracking and Reporting**: establishing the tech stack and systems to track, analyze, and report on key sales metrics. Data-driven sales strategies can lead to increased efficiency and improved outcomes.
 
-8. **Sales Playbook**: documenting your sales process, including best practices, techniques, and scripts that your sales team can use. It serves as a guide for new hires and a reference point for all members of the team. Essential for getting information out of the founder/early team's head and onto paper and is fundamental to any kind of scale.
+8. **Sales Playbook**: documenting your sales process, including best practices, techniques, and scripts that your sales team can use. In 2026, [your playbook needs AI infrastructure](/insights/your-sales-playbook-needs-ai-infrastructure), not just a Google Doc. It serves as a guide for new hires and a reference point for all members of the team. Essential for getting information out of the founder/early team's head and onto paper and is fundamental to any kind of scale.
 
 9. **Team Training and Structure**: the organization of your sales team, the roles and responsibilities of each member, and the training and resources provided to them. Regular training helps ensure that your team is skilled, knowledgeable, and aligned with your sales strategy. Your incentive plan structuring is key - my advice at the beginning is to keep it simple. You can complicate things later, but if the sales team can't easily figure out their commission it's too hard.
 
 So that's it. Nothing that isn't included in every sales manual and guidebook. No rocket science. But if you follow this blueprint you will be well on the way to building a scalable, repeatable sales engine for your company.
 
-Alright, enough with the guidebook stuff. If you're nodding along and thinking, 'This is what I need,' let's chat. No fluff, just straight talk about getting your sales on track. Hit me up, and let's see how a Fractional VP Sales can kick your sales into high gear.
+Alright, enough with the guidebook stuff. If you're nodding along and thinking, 'This is what I need,' let's chat. No fluff, just straight talk about getting your sales on track. Want to understand what working with a [Fractional VP of Sales](/insights/what-is-a-fractional-vp-sales) actually looks like? And for the tech to power all of this, check out [the sales stack to get you to $10M](/insights/the-sales-stack-to-get-you-to-10m-in-enterprise-sales).
