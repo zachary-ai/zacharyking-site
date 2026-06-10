@@ -52,18 +52,24 @@ const { title, description, image = '/images/tif-presenting.jpg' } = Astro.props
       "@type": "Person",
       "@id": "https://zacharyking.com.au/#person",
       "name": "Zachary King",
-      "jobTitle": "Fractional GTM Leader",
-      "description": "Fractional GTM leader building AI-powered revenue systems for B2B startups. 20+ years in B2B sales, from $25M enterprise deals to AI-powered GTM infrastructure.",
+      "jobTitle": "Cofounder & CEO at Works",
+      "description": "Cofounder & CEO of Works, the AI implementation consultancy for Australian SMEs. 20+ years in B2B sales, from $25M enterprise deals to AI-powered GTM infrastructure. Founder of The Fractional Exec community.",
       "url": "https://zacharyking.com.au/",
       "image": "https://zacharyking.com.au/images/tif-presenting.jpg",
       "sameAs": [
         "https://www.linkedin.com/in/zacharyking/",
         "https://twitter.com/superzac",
-        "https://thefractionalexec.com.au"
+        "https://thefractionalexec.com.au",
+        "https://workshq.com.au"
       ],
-      "worksFor": {
-        "@id": "https://zacharyking.com.au/#organization"
-      },
+      "worksFor": [
+        {
+          "@id": "https://workshq.com.au/#organization"
+        },
+        {
+          "@id": "https://zacharyking.com.au/#organization"
+        }
+      ],
       "knowsAbout": [
         "Go-to-Market Strategy",
         "AI-Powered Sales Infrastructure",
@@ -79,6 +85,21 @@ const { title, description, image = '/images/tif-presenting.jpg' } = Astro.props
         "addressLocality": "Melbourne",
         "addressCountry": "AU"
       }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://workshq.com.au/#organization",
+      "name": "Works",
+      "legalName": "Works HQ Pty Ltd",
+      "alternateName": "Works HQ",
+      "url": "https://workshq.com.au/",
+      "description": "AI implementation consultancy for Australian SMEs. Audits, embedded operators, and the Works Brain, delivered in 90 days.",
+      "founder": {
+        "@id": "https://zacharyking.com.au/#person"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/workshqai"
+      ]
     },
     {
       "@type": "Organization",

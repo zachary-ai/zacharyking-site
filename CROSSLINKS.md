@@ -74,3 +74,20 @@
 2. **Topic Clustering:** Establishes you as authority on fractional GTM
 3. **User Journey:** Natural path from content (FEC) → services (zacharyking.com.au)
 4. **Brand Ecosystem:** Shows depth and credibility across multiple touchpoints
+
+---
+
+## Works (added 11 Jun 2026)
+
+**URL:** https://workshq.com.au
+**Entity handle:** Works HQ (legalName Works HQ Pty Ltd, schema @id https://workshq.com.au/#organization)
+**Tagline:** "AI that Works" / "Make AI work in your business."
+**LinkedIn:** https://www.linkedin.com/company/workshqai
+
+**Where it's linked on zacharyking.com.au (LOUD by design, Zac 11 Jun):**
+- Site-wide announcement banner in Header.astro → workshq.com.au
+- Footer "More from Zac" (first position)
+- About page "Where I am now" callout box
+- Person schema: jobTitle, worksFor, sameAs → workshq.com.au/#organization (the reciprocal entity edge; Works' founder.sameAs points back here)
+
+**Key deep links for future content:** /ai-audit/ (entry product), /resources/ (Ship Log), /resources/what-ai-consulting-costs-australia/ (pricing guide)
